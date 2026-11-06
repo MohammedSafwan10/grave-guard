@@ -25,7 +25,8 @@ export function createBot(config: GameConfig, opts: BotOptions) {
 
   function tryPlace(state: SimState, kind: DefenderKind, lane: number, cols: number[]): Command | null {
     for (const col of cols) {
-      if (placementProblem(state, config, kind, lane, col) === null) return { type: "placeDefender", kind, lane, col };
+      if (placementProblem(state, config, kind, lane, col) === null)
+        return { type: "placeDefender", kind, lane, col };
     }
     return null;
   }
@@ -68,13 +69,18 @@ export function createBot(config: GameConfig, opts: BotOptions) {
     }
     // 4. Coffin in front of lanes with heavy enemies.
     for (let lane = 0; lane < lanes; lane++) {
-      if (state.enemies.some((e) => e.lane === lane && (e.kind === "boneKnight" || e.kind === "lich")) && count("coffin", lane) === 0) {
+      if (
+        state.enemies.some((e) => e.lane === lane && (e.kind === "boneKnight" || e.kind === "lich")) &&
+        count("coffin", lane) === 0
+      ) {
         const c = tryPlace(state, "coffin", lane, [5, 6, 4]);
         if (c) return c;
       }
     }
     // 5. More gargoyles where the threat is highest, otherwise spread evenly.
-    const order = [...Array(lanes).keys()].sort((a, b) => threat(b) - threat(a) || count("gargoyle", a) - count("gargoyle", b));
+    const order = [...Array(lanes).keys()].sort(
+      (a, b) => threat(b) - threat(a) || count("gargoyle", a) - count("gargoyle", b),
+    );
     for (const lane of order) {
       if (count("gargoyle", lane) < 4) {
         const c = tryPlace(state, "gargoyle", lane, [1, 2, 3, 4, 5]);

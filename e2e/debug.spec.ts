@@ -10,8 +10,20 @@ test("debug: does the sim advance?", async ({ page }) => {
   for (let i = 0; i < 6; i++) {
     await page.waitForTimeout(1000);
     const s = await page.evaluate(() => {
-      const b = (window as unknown as { gg: { battle: { state: { tick: number; paused: boolean; result: string; energy: number } } | null } }).gg.battle;
-      return b ? { tick: b.state.tick, paused: b.state.paused, result: b.state.result, energy: b.state.energy, hidden: document.hidden } : null;
+      const b = (
+        window as unknown as {
+          gg: { battle: { state: { tick: number; paused: boolean; result: string; energy: number } } | null };
+        }
+      ).gg.battle;
+      return b
+        ? {
+            tick: b.state.tick,
+            paused: b.state.paused,
+            result: b.state.result,
+            energy: b.state.energy,
+            hidden: document.hidden,
+          }
+        : null;
     });
     console.log(JSON.stringify(s));
   }

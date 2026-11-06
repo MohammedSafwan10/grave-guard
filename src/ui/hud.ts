@@ -1,4 +1,5 @@
 import { el, img } from "./dom";
+import { icon } from "./icons";
 
 export interface HudView {
   wave: number;
@@ -11,6 +12,8 @@ export interface HudView {
 
 export class Hud {
   readonly root: HTMLElement;
+  /** Round pause / settings buttons, placed in the top-right corner above the spellbook. */
+  readonly controls: HTMLElement;
   private readonly waveText = el("span", { class: "plaque-text" });
   private readonly energyText = el("span", { class: "plaque-text energy-value" });
   private readonly hearts: HTMLImageElement[] = [];
@@ -19,17 +22,35 @@ export class Hud {
   readonly gem = img("/assets/ui/icon_soul_gem.webp", "", "gem");
   private lastEnergy = -1;
 
-  constructor(maxLives: number) {
+  constructor(maxLives: number, actions: { onPause: () => void; onSettings: () => void }) {
     for (let i = 0; i < maxLives; i++) {
       const h = img("/assets/ui/icon_heart_full.webp", "", "heart");
       this.hearts.push(h);
       this.heartsBox.append(h);
     }
     this.root = el("header", { class: "hud" }, [
-      el("div", { class: "brand" }, [img("/assets/ui/ui_logo.webp", "Grave Guard: Moonbloom Hollow", "brand-logo")]),
+      el("div", { class: "brand" }, [
+        img("/assets/ui/ui_logo.webp", "Grave Guard: Moonbloom Hollow", "brand-logo"),
+      ]),
       el("div", { class: "plaque wave-plaque" }, [this.waveText]),
-      el("div", { class: "plaque energy-plaque", attrs: { "aria-live": "polite" } }, [this.gem, this.energyText]),
+      el("div", { class: "plaque energy-plaque", attrs: { "aria-live": "polite" } }, [
+        this.gem,
+        this.energyText,
+      ]),
       el("div", { class: "plaque hearts-plaque" }, [this.heartsBox]),
+    ]);
+    const round = (label: string, name: "pause" | "speaker", run: () => void) => {
+      const b = el(
+        "button",
+        { class: "round-btn", attrs: { type: "button", "aria-label": label, title: label } },
+        [icon(name)],
+      );
+      b.addEventListener("click", run);
+      return b;
+    };
+    this.controls = el("div", { class: "hud-controls" }, [
+      round("Sound and settings", "speaker", actions.onSettings),
+      round("Pause (Esc)", "pause", actions.onPause),
     ]);
   }
 

@@ -17,12 +17,22 @@ export interface Quiz {
   /** Pick the next question. Boss questions prefer the hardest ones. */
   next(opts?: { boss?: boolean }): Question;
   /** Check an answer. `msTaken` decides the fast bonus. */
-  submit(q: Question, choice: number, msTaken: number, opts?: { boss?: boolean; fastMs?: number }): AnswerResult;
+  submit(
+    q: Question,
+    choice: number,
+    msTaken: number,
+    opts?: { boss?: boolean; fastMs?: number },
+  ): AnswerResult;
   byId(id: string): Question | undefined;
 }
 
 export function createQuiz(pack: QuestionPack, seed: number): Quiz {
-  const state: QuizState = { rng: createRng(seed ^ 0x9e3779b9), recent: [], topicMistakes: {}, missedIds: [] };
+  const state: QuizState = {
+    rng: createRng(seed ^ 0x9e3779b9),
+    recent: [],
+    topicMistakes: {},
+    missedIds: [],
+  };
   const index = new Map(pack.questions.map((q) => [q.id, q]));
   const window = Math.min(RECENT_WINDOW, pack.questions.length - 1);
 
@@ -56,7 +66,12 @@ export function createQuiz(pack: QuestionPack, seed: number): Quiz {
     return pick;
   }
 
-  function submit(q: Question, choice: number, msTaken: number, opts: { boss?: boolean; fastMs?: number } = {}): AnswerResult {
+  function submit(
+    q: Question,
+    choice: number,
+    msTaken: number,
+    opts: { boss?: boolean; fastMs?: number } = {},
+  ): AnswerResult {
     const correct = choice === q.answer;
     if (!correct) {
       state.topicMistakes[q.topic] = (state.topicMistakes[q.topic] ?? 0) + 1;
@@ -65,7 +80,12 @@ export function createQuiz(pack: QuestionPack, seed: number): Quiz {
       // Getting it right slowly "heals" the topic.
       state.topicMistakes[q.topic] = (state.topicMistakes[q.topic] ?? 1) - 0.5;
     }
-    return { questionId: q.id, correct, fast: correct && msTaken < (opts.fastMs ?? 5000), boss: opts.boss === true };
+    return {
+      questionId: q.id,
+      correct,
+      fast: correct && msTaken < (opts.fastMs ?? 5000),
+      boss: opts.boss === true,
+    };
   }
 
   return { pack, state, next, submit, byId: (id) => index.get(id) };

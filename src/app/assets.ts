@@ -21,6 +21,8 @@ export interface Manifests {
 export interface Assets {
   manifests: Manifests;
   textures: Map<string, THREE.Texture>;
+  /** True when the art exists (optional props and scenery). */
+  has(key: string): boolean;
   art(key: string): ArtEntry;
   texture(key: string): THREE.Texture;
 }
@@ -59,6 +61,9 @@ export async function loadAssets(onProgress: (p: number) => void): Promise<Asset
   return {
     manifests: { art, audio },
     textures,
+    has(key) {
+      return textures.has(key);
+    },
     art(key) {
       const a = art[key];
       if (!a) throw new Error(`Missing art "${key}" in art-manifest.json`);

@@ -45,7 +45,15 @@ export class Particles {
     this.points.frustumCulled = false;
   }
 
-  private emit(p: THREE.Vector3, color: THREE.Color, vx: number, vy: number, vz: number, life: number, size: number): void {
+  private emit(
+    p: THREE.Vector3,
+    color: THREE.Color,
+    vx: number,
+    vy: number,
+    vz: number,
+    life: number,
+    size: number,
+  ): void {
     const i = this.next;
     this.next = (this.next + 1) % MAX;
     this.pos.set([p.x, p.y, p.z], i * 3);
@@ -61,7 +69,37 @@ export class Particles {
     for (let n = 0; n < count; n++) {
       const a = Math.random() * Math.PI * 2;
       const s = 0.6 + Math.random() * 1.6;
-      this.emit(at, c, Math.cos(a) * s, 0.6 + Math.random() * 1.8, Math.sin(a) * s * 0.6, 0.5 + Math.random() * 0.6, 0.12 + Math.random() * 0.14);
+      this.emit(
+        at,
+        c,
+        Math.cos(a) * s,
+        0.6 + Math.random() * 1.8,
+        Math.sin(a) * s * 0.6,
+        0.5 + Math.random() * 0.6,
+        0.12 + Math.random() * 0.14,
+      );
+    }
+  }
+
+  /** Soft motes rising from random points inside a sprite's box, for the dissolve. */
+  spray(center: THREE.Vector3, w: number, h: number, hex: number, count: number): void {
+    const c = new THREE.Color(hex);
+    const p = new THREE.Vector3();
+    for (let n = 0; n < count; n++) {
+      p.set(
+        center.x + (Math.random() - 0.5) * w,
+        center.y + (Math.random() - 0.5) * h,
+        center.z + (Math.random() - 0.5) * 0.2,
+      );
+      this.emit(
+        p,
+        c,
+        (Math.random() - 0.5) * 0.5,
+        0.5 + Math.random() * 0.9,
+        (Math.random() - 0.5) * 0.3,
+        0.6 + Math.random() * 0.6,
+        0.08 + Math.random() * 0.1,
+      );
     }
   }
 

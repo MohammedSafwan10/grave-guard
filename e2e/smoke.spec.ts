@@ -1,6 +1,13 @@
 import { expect, test, type Page } from "@playwright/test";
 
-type Gg = { gg: { battle: { fastForward(s: number): void; state: { energy: number; enemies: unknown[]; tick: number } } | null } };
+type Gg = {
+  gg: {
+    battle: {
+      fastForward(s: number): void;
+      state: { energy: number; enemies: unknown[]; tick: number };
+    } | null;
+  };
+};
 
 /** Headless browsers render slowly, so the test skips game time forward instead of waiting. */
 const fastForward = (page: Page, seconds: number) =>
@@ -26,6 +33,16 @@ test("title → level 1 → answer, place defenders, fight a wave", async ({ pag
   await expect(page.getByRole("button", { name: /Moonbloom Hollow/ })).toBeVisible({ timeout: 30_000 });
   await page.waitForTimeout(800);
   await page.screenshot({ path: "e2e-shots/01-title.png" });
+
+  await page.getByRole("button", { name: "Settings" }).click();
+  await expect(page.getByRole("switch").first()).toBeVisible();
+  await page.waitForTimeout(500);
+  await page.screenshot({ path: "e2e-shots/05-settings.png" });
+  await page.keyboard.press("Escape");
+  await page.getByRole("button", { name: "How to play" }).click();
+  await page.waitForTimeout(500);
+  await page.screenshot({ path: "e2e-shots/06-howto.png" });
+  await page.keyboard.press("Escape");
 
   await page.getByRole("button", { name: /Moonbloom Hollow/ }).click();
   await expect(page.locator(".book-question")).not.toBeEmpty();
@@ -58,8 +75,16 @@ test("title → level 1 → answer, place defenders, fight a wave", async ({ pag
   expect(tick).toBeGreaterThan(60 * 22);
 
   await fastForward(page, 6);
+  await page.waitForTimeout(150);
+  await page.screenshot({ path: "e2e-shots/07-dissolve.png" });
   await page.waitForTimeout(400);
   await page.screenshot({ path: "e2e-shots/04-wave-1-later.png" });
+
+  await page.getByRole("button", { name: "Pause (Esc)" }).click();
+  await expect(page.getByRole("button", { name: "Resume" })).toBeVisible();
+  await page.waitForTimeout(400);
+  await page.screenshot({ path: "e2e-shots/08-pause.png" });
+  await page.getByRole("button", { name: "Resume" }).click();
 
   expect(errors, errors.join("\n")).toEqual([]);
 });

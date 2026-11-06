@@ -38,7 +38,9 @@ export class AudioSystem {
 
   async loadSfx(): Promise<void> {
     await Promise.all(
-      Object.entries(this.manifest.sfx).map(async ([name, e]) => this.buffers.set(name, await this.load(e.url))),
+      Object.entries(this.manifest.sfx).map(async ([name, e]) =>
+        this.buffers.set(name, await this.load(e.url)),
+      ),
     );
   }
 

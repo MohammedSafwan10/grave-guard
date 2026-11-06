@@ -33,7 +33,13 @@ export const DefendersSchema = z.object({
     answerBonus: z.number().int().positive(),
     maxCounted: z.number().int().positive(),
   }),
-  gargoyle: z.object({ ...base, hp: positive, fireEverySec: positive, damage: positive, boltSpeed: positive }),
+  gargoyle: z.object({
+    ...base,
+    hp: positive,
+    fireEverySec: positive,
+    damage: positive,
+    boltSpeed: positive,
+  }),
   coffin: z.object({ ...base, hp: positive }),
   rune: z.object({ ...base, slowFactor: z.number().min(0).max(1), slowSec: positive, lifetimeSec: positive }),
   bell: z.object({
@@ -107,7 +113,12 @@ export interface GameConfig {
 }
 
 /** Validate raw JSON. Throws with the failing path so bad data is caught at load, not mid-game. */
-export function parseConfig(raw: { rules: unknown; defenders: unknown; enemies: unknown; levels: unknown }): GameConfig {
+export function parseConfig(raw: {
+  rules: unknown;
+  defenders: unknown;
+  enemies: unknown;
+  levels: unknown;
+}): GameConfig {
   const config = {
     rules: RulesSchema.parse(raw.rules),
     defenders: DefendersSchema.parse(raw.defenders),
@@ -117,7 +128,8 @@ export function parseConfig(raw: { rules: unknown; defenders: unknown; enemies: 
   for (const level of config.levels) {
     for (const wave of level.waves) {
       for (const s of wave.spawns) {
-        if (s.lane >= config.rules.lanes) throw new Error(`Level ${level.id}: lane ${s.lane} is off the board`);
+        if (s.lane >= config.rules.lanes)
+          throw new Error(`Level ${level.id}: lane ${s.lane} is off the board`);
       }
     }
   }

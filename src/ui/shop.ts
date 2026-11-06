@@ -32,7 +32,10 @@ export class Shop {
           el("span", { class: "card-key", text: (Shop.KEYS[i] ?? "").toUpperCase() }),
           img(`/assets/${item.sprite}.webp`, "", "card-art"),
           el("span", { class: "card-name", text: item.name }),
-          el("span", { class: "card-price" }, [img("/assets/ui/icon_soul_gem.webp", "", "card-gem"), el("span", { text: String(item.cost) })]),
+          el("span", { class: "card-price" }, [
+            img("/assets/ui/icon_soul_gem.webp", "", "card-gem"),
+            el("span", { text: String(item.cost) }),
+          ]),
           img("/assets/ui/icon_lock.webp", "", "card-lock"),
         ],
       );

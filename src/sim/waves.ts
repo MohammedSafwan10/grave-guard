@@ -3,7 +3,13 @@ import type { SimEvent } from "./events";
 import { newId } from "./state";
 import { secToTicks, type Enemy, type EnemyKind, type SimState } from "./types";
 
-export function spawnEnemy(state: SimState, config: GameConfig, events: SimEvent[], kind: EnemyKind, lane: number): Enemy {
+export function spawnEnemy(
+  state: SimState,
+  config: GameConfig,
+  events: SimEvent[],
+  kind: EnemyKind,
+  lane: number,
+): Enemy {
   const def = config.enemies[kind];
   const enemy: Enemy = {
     id: newId(state),
@@ -31,11 +37,20 @@ export function runWaves(state: SimState, config: GameConfig, events: SimEvent[]
   if (w.status === "breather") {
     if (!w.announced) {
       w.announced = true;
-      events.push({ type: "waveStarting", index: w.index, count: w.count, inTicks: w.statusUntil - state.tick });
+      events.push({
+        type: "waveStarting",
+        index: w.index,
+        count: w.count,
+        inTicks: w.statusUntil - state.tick,
+      });
     }
     if (state.tick >= w.statusUntil) {
       const wave = level.waves[w.index];
-      w.queue = (wave?.spawns ?? []).map((s) => ({ tick: state.tick + secToTicks(s.atSec), lane: s.lane, kind: s.kind }));
+      w.queue = (wave?.spawns ?? []).map((s) => ({
+        tick: state.tick + secToTicks(s.atSec),
+        lane: s.lane,
+        kind: s.kind,
+      }));
       w.status = "spawning";
       events.push({ type: "waveStarted", index: w.index, count: w.count });
     }

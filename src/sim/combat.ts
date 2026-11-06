@@ -16,10 +16,19 @@ export function runDefenders(state: SimState, config: GameConfig, events: SimEve
         break;
       case "gargoyle":
         // The timer stays "ready" while the lane is empty, so it shoots the moment a ghost shows up.
-        if (t >= d.nextActionTick && state.enemies.some((e) => e.lane === d.lane && e.x > d.col && onBoard(config, e))) {
+        if (
+          t >= d.nextActionTick &&
+          state.enemies.some((e) => e.lane === d.lane && e.x > d.col && onBoard(config, e))
+        ) {
           const id = newId(state);
           const x = d.col + 0.35;
-          state.bolts.push({ id, lane: d.lane, x, damage: defs.gargoyle.damage, speed: defs.gargoyle.boltSpeed });
+          state.bolts.push({
+            id,
+            lane: d.lane,
+            x,
+            damage: defs.gargoyle.damage,
+            speed: defs.gargoyle.boltSpeed,
+          });
           events.push({ type: "boltFired", id, from: d.id, lane: d.lane, x });
           d.nextActionTick = t + secToTicks(defs.gargoyle.fireEverySec);
         }

@@ -24,14 +24,24 @@ export function answerReward(config: GameConfig, streak: number, fast: boolean, 
   const r = config.rules;
   const lantern = config.defenders.lantern;
   const bonus = Math.min(r.streakMax, r.streakStep * Math.max(0, streak - 1));
-  return r.correctEnergy + bonus + (fast ? r.fastBonus : 0) + Math.min(lanterns, lantern.maxCounted) * lantern.answerBonus;
+  return (
+    r.correctEnergy +
+    bonus +
+    (fast ? r.fastBonus : 0) +
+    Math.min(lanterns, lantern.maxCounted) * lantern.answerBonus
+  );
 }
 
 export function lanternCount(state: SimState): number {
   return state.defenders.filter((d) => d.kind === "lantern").length;
 }
 
-export function applyAnswer(state: SimState, config: GameConfig, events: SimEvent[], result: AnswerResult): void {
+export function applyAnswer(
+  state: SimState,
+  config: GameConfig,
+  events: SimEvent[],
+  result: AnswerResult,
+): void {
   if (result.correct) {
     state.streak += 1;
     state.bestStreak = Math.max(state.bestStreak, state.streak);

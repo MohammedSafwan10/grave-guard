@@ -18,7 +18,14 @@ export function placementProblem(
 ): RejectReason | null {
   const r = config.rules;
   if (state.result !== "playing") return "notPlaying";
-  if (!Number.isInteger(lane) || !Number.isInteger(col) || lane < 0 || lane >= r.lanes || col < 0 || col >= r.cols)
+  if (
+    !Number.isInteger(lane) ||
+    !Number.isInteger(col) ||
+    lane < 0 ||
+    lane >= r.lanes ||
+    col < 0 ||
+    col >= r.cols
+  )
     return "offBoard";
   if (col === r.cols - 1) return "spawnColumn";
   if (defenderAt(state, lane, col)) return "occupied";

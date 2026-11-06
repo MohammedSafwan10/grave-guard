@@ -22,11 +22,16 @@ export const QuestionPackSchema = z
   .superRefine((pack, ctx) => {
     const ids = new Set<string>();
     pack.questions.forEach((q, i) => {
-      if (ids.has(q.id)) ctx.addIssue({ code: "custom", message: `Duplicate question id ${q.id}`, path: ["questions", i] });
+      if (ids.has(q.id))
+        ctx.addIssue({ code: "custom", message: `Duplicate question id ${q.id}`, path: ["questions", i] });
       ids.add(q.id);
       const lower = q.choices.map((c) => c.toLowerCase());
       if (new Set(lower).size !== 4)
-        ctx.addIssue({ code: "custom", message: `Question ${q.id} has duplicate choices`, path: ["questions", i] });
+        ctx.addIssue({
+          code: "custom",
+          message: `Question ${q.id} has duplicate choices`,
+          path: ["questions", i],
+        });
     });
   });
 

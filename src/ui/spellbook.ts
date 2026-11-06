@@ -10,7 +10,10 @@ export interface SpellbookCallbacks {
 export class Spellbook {
   readonly root: HTMLElement;
   private readonly title = el("h2", { class: "book-title", text: "The Spellbook" });
-  private readonly badge = el("div", { class: "boss-badge", text: "Boss question: break the Lich's shield!" });
+  private readonly badge = el("div", {
+    class: "boss-badge",
+    text: "Boss question: break the Lich's shield!",
+  });
   private readonly topic = el("div", { class: "book-topic" });
   private readonly prompt = el("p", { class: "book-question", attrs: { "aria-live": "polite" } });
   private readonly answers: HTMLButtonElement[] = [];
@@ -44,7 +47,16 @@ export class Spellbook {
     }
     starRow.append(this.streakText);
     this.root = el("aside", { class: "spellbook", attrs: { "aria-label": "Spellbook quiz" } }, [
-      el("div", { class: "book-inner" }, [this.title, this.badge, this.topic, this.prompt, grid, this.feedback, starRow, this.skip]),
+      el("div", { class: "book-inner" }, [
+        this.title,
+        this.badge,
+        this.topic,
+        this.prompt,
+        grid,
+        this.feedback,
+        starRow,
+        this.skip,
+      ]),
     ]);
   }
 
@@ -93,7 +105,8 @@ export class Spellbook {
 
   setStreak(streak: number, bellAt: number): void {
     this.stars.forEach((s, i) => {
-      const src = i < Math.min(streak, bellAt) ? "/assets/ui/icon_star_full.webp" : "/assets/ui/icon_star_empty.webp";
+      const src =
+        i < Math.min(streak, bellAt) ? "/assets/ui/icon_star_full.webp" : "/assets/ui/icon_star_empty.webp";
       if (!s.src.endsWith(src)) s.src = src;
     });
     this.streakText.textContent = streak >= 2 ? `Streak ×${streak}` : "";

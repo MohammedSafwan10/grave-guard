@@ -438,7 +438,8 @@ button:focus-visible {
   font-size: clamp(12px, 0.9vw, 16px);
 }
 .book-skip {
-  margin: auto auto 0;
+  /* Sits right under the stars so it stays on the parchment, not on the book's bottom edge. */
+  margin: 0.6em auto 0;
   background: none;
   border: 1px solid rgba(58, 42, 31, 0.35);
   border-radius: 999px;
@@ -448,7 +449,7 @@ button:focus-visible {
   font-size: clamp(12px, 0.85vw, 15px);
 }
 .book-skip:disabled {
-  opacity: 0.35;
+  opacity: 0.5;
   cursor: default;
 }
 
@@ -723,6 +724,349 @@ button:focus-visible {
 }
 .battle.paused .book-inner {
   visibility: hidden;
+}
+
+/* ---------- Round HUD buttons (top-right, above the spellbook) ---------- */
+.hud-controls {
+  position: absolute;
+  top: 1.2vh;
+  right: 1vw;
+  display: flex;
+  gap: 0.5vw;
+  z-index: 2;
+}
+.round-btn {
+  width: clamp(40px, 3.2vw, 56px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 217, 138, 0.75);
+  background: radial-gradient(circle at 35% 30%, #5a4794, #2a2050 70%);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  padding: 0;
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.55),
+    inset 0 0 8px rgba(201, 182, 255, 0.25);
+  transition:
+    transform 0.12s var(--ease),
+    box-shadow 0.12s;
+}
+.round-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 14px rgba(0, 0, 0, 0.6),
+    0 0 12px rgba(95, 240, 230, 0.45);
+}
+.round-btn:active {
+  transform: scale(0.92);
+}
+.icon {
+  width: 55%;
+  height: 55%;
+  fill: currentColor;
+}
+
+/* ---------- Shop tray (carved stone ledge under the cards, like the concept) ---------- */
+.shop::before {
+  content: "";
+  position: absolute;
+  inset: 18% -1.2vw -1.4vh;
+  z-index: -1;
+  border-radius: 18px 18px 0 0;
+  background:
+    linear-gradient(180deg, rgba(201, 182, 255, 0.18), transparent 30%),
+    linear-gradient(180deg, #4a3a78, #241a45);
+  border: 2px solid rgba(255, 217, 138, 0.35);
+  border-bottom: 0;
+  box-shadow:
+    0 -6px 24px rgba(0, 0, 0, 0.45),
+    inset 0 2px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Foreground foliage (optional art) ---------- */
+.foliage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - var(--panel));
+  height: 34vh;
+  object-fit: cover;
+  object-position: top center;
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+/* ---------- Title and menus ---------- */
+.screen.title .dialog {
+  width: min(980px, 94vw);
+  gap: 1.1em;
+}
+.btn.big {
+  min-width: 260px;
+  font-size: clamp(18px, 1.5vw, 26px);
+  padding: 0.75em 2em;
+}
+.level-cards {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.level-card {
+  width: clamp(190px, 17vw, 270px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+  padding: 1em 1em 0.8em;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 217, 138, 0.45);
+  background:
+    linear-gradient(180deg, rgba(201, 182, 255, 0.12), transparent 40%),
+    linear-gradient(180deg, rgba(61, 47, 107, 0.92), rgba(27, 21, 51, 0.95));
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.15s var(--ease),
+    box-shadow 0.15s;
+}
+.level-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 26px rgba(0, 0, 0, 0.55),
+    0 0 18px rgba(95, 240, 230, 0.35);
+}
+.level-card:active {
+  transform: scale(0.97);
+}
+.level-card.suggested {
+  border-color: var(--cyan);
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.5),
+    0 0 16px rgba(95, 240, 230, 0.3);
+}
+.level-num {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--lavender);
+  font-weight: 800;
+}
+.level-title {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: clamp(16px, 1.25vw, 21px);
+  color: var(--gold);
+}
+.level-blurb {
+  font-size: 14px;
+  color: var(--parchment);
+  opacity: 0.8;
+  min-height: 2.6em;
+}
+.star-row {
+  display: flex;
+  gap: 0.2em;
+  height: 26px;
+}
+.star-row.big {
+  height: 54px;
+}
+.star-row .star {
+  height: 100%;
+}
+.menu-links {
+  display: flex;
+  gap: 0.4em 1.6em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.link-btn {
+  background: none;
+  border: 0;
+  padding: 0.4em 0.6em;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--lavender);
+  text-shadow: 0 2px 6px #000;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.12s,
+    border-color 0.12s;
+}
+.link-btn:hover {
+  color: var(--cyan);
+  border-bottom-color: currentColor;
+}
+.pause-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7em;
+  width: 100%;
+}
+.pause-buttons .btn.primary {
+  grid-column: 1 / -1;
+}
+.new-best {
+  margin: 0;
+  font-weight: 800;
+  color: var(--cyan);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ---------- Settings ---------- */
+.settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  text-align: left;
+}
+.set-row {
+  display: grid;
+  grid-template-columns: 9em 1fr 3.5em;
+  align-items: center;
+  gap: 1em;
+  padding: 0.6em 0.9em;
+  border-radius: 12px;
+  background: rgba(242, 227, 196, 0.06);
+}
+.set-toggle {
+  grid-template-columns: 1fr auto;
+  cursor: pointer;
+}
+.set-text {
+  display: flex;
+  flex-direction: column;
+}
+.set-label {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--gold);
+}
+.set-hint {
+  font-size: 14px;
+  color: var(--lavender);
+}
+.set-value {
+  font-weight: 800;
+  font-size: 18px;
+  text-align: right;
+}
+.settings input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 99px;
+  background:
+    linear-gradient(90deg, var(--teal), var(--cyan)) 0 / var(--fill, 50%) 100% no-repeat,
+    rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+}
+.settings input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff6dc, var(--gold) 60%, #b07a2e);
+  border: 2px solid #5a3d1a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+.settings input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 2px solid #5a3d1a;
+}
+.settings input:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 4px;
+}
+.switch {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 56px;
+  height: 30px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 217, 138, 0.45);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.switch::after {
+  content: "OFF";
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--parchment);
+  font-size: 7px;
+  font-weight: 800;
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  transition: left 0.15s var(--ease);
+}
+.switch:checked {
+  background: var(--teal);
+}
+.switch:checked::after {
+  content: "ON";
+  left: 27px;
+}
+
+/* ---------- How to play, credits ---------- */
+.howto,
+.credits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  text-align: left;
+}
+.howto-step {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 1em;
+  align-items: center;
+  padding: 0.6em 0.9em;
+  border-radius: 12px;
+  background: rgba(242, 227, 196, 0.06);
+}
+.howto-art {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+}
+.howto-step strong,
+.credits strong {
+  display: block;
+  font-family: "Cinzel", serif;
+  color: var(--gold);
+  font-size: 18px;
+}
+.howto-step span,
+.credits span {
+  font-size: 16px;
+  line-height: 1.35;
+}
+.credits li {
+  padding: 0.5em 0.9em;
+  border-radius: 12px;
+  background: rgba(242, 227, 196, 0.06);
 }
 
 /* ---------- Narrow screens: spellbook drops below the board ---------- */

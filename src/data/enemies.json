@@ -1,6 +1,20 @@
 {
-  "wisp": { "name": "Wisp", "hp": 100, "speed": 0.35, "biteDps": 20, "floats": true, "sprite": "enemies/enemy_wisp" },
-  "shade": { "name": "Shade", "hp": 60, "speed": 0.8, "biteDps": 15, "floats": true, "sprite": "enemies/enemy_shade" },
+  "wisp": {
+    "name": "Wisp",
+    "hp": 100,
+    "speed": 0.35,
+    "biteDps": 20,
+    "floats": true,
+    "sprite": "enemies/enemy_wisp"
+  },
+  "shade": {
+    "name": "Shade",
+    "hp": 60,
+    "speed": 0.8,
+    "biteDps": 15,
+    "floats": true,
+    "sprite": "enemies/enemy_shade"
+  },
   "boneKnight": {
     "name": "Bone Knight",
     "hp": 260,

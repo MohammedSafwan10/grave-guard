@@ -70,6 +70,29 @@ export function buildBoard(stone: THREE.Texture, grass: THREE.Texture): BoardMes
   ground.receiveShadow = false;
   group.add(ground);
 
+  // Grass hedges between lanes, like the concept art: they make each lane read as its own row at a glance.
+  const hedgeTex = grass.clone();
+  hedgeTex.wrapS = hedgeTex.wrapT = THREE.RepeatWrapping;
+  hedgeTex.repeat.set(10, 0.3);
+  hedgeTex.needsUpdate = true;
+  // A little emissive keeps the thin hedges from going black on their shaded sides.
+  const hedgeMat = new THREE.MeshStandardMaterial({
+    map: hedgeTex,
+    color: 0xe4fff0,
+    emissive: 0x1d4a3e,
+    emissiveIntensity: 0.8,
+    roughness: 1,
+  });
+  for (let i = 0; i <= BOARD.lanes; i++) {
+    const outer = i === 0 || i === BOARD.lanes;
+    const hedge = new THREE.Mesh(
+      new THREE.BoxGeometry(BOARD.cols + 0.1, outer ? 0.16 : 0.12, outer ? 0.24 : 0.16),
+      hedgeMat,
+    );
+    hedge.position.set(0, outer ? 0.05 : 0.04, (i - BOARD.lanes / 2) * BOARD.tile);
+    group.add(hedge);
+  }
+
   const tileGeo = new THREE.BoxGeometry(0.9, 0.08, 0.86);
   const tileMat = new THREE.MeshStandardMaterial({ map: stone, color: 0xd8d0f0, roughness: 0.9 });
   const spawnMat = new THREE.MeshStandardMaterial({ map: stone, color: 0x8a7fb5, roughness: 0.95 });

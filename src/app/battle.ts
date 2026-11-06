@@ -14,7 +14,9 @@ import {
   type SimState,
 } from "../sim";
 import { Hud } from "../ui/hud";
+import type { SettingsPanelDeps } from "../ui/settings-panel";
 import type { Screens } from "../ui/screens";
+import { loadProgress, recordResult, starsFor } from "./settings";
 import { Shop, type ShopItem } from "../ui/shop";
 import { Spellbook } from "../ui/spellbook";
 
@@ -31,6 +33,7 @@ export interface BattleDeps {
   audio: AudioSystem;
   screens: Screens;
   uiRoot: HTMLElement;
+  settingsUi: SettingsPanelDeps;
   onExit: (next: "title" | "retry" | "next") => void;
 }
 
@@ -61,18 +64,53 @@ export class Battle {
     this.quiz = createQuiz(d.pack, d.seed);
     const defs = d.config.defenders;
     const items: ShopItem[] = [
-      { kind: "lantern", name: defs.lantern.name, cost: defs.lantern.cost, sprite: defs.lantern.sprite, hint: `+${defs.lantern.answerBonus} energy on every correct answer` },
-      { kind: "gargoyle", name: defs.gargoyle.name, cost: defs.gargoyle.cost, sprite: defs.gargoyle.sprite, hint: "Shoots soul bolts down its lane" },
-      { kind: "coffin", name: defs.coffin.name, cost: defs.coffin.cost, sprite: defs.coffin.sprite, hint: "A sturdy wall. Wraiths fly over it" },
-      { kind: "rune", name: defs.rune.name, cost: defs.rune.cost, sprite: defs.rune.sprite, hint: "Slows ghosts that walk over it" },
-      { kind: "bell", name: defs.bell.name, cost: defs.bell.cost, sprite: defs.bell.sprite, hint: `Hits every ghost. Unlock with a ${defs.bell.unlockStreak}-answer streak` },
+      {
+        kind: "lantern",
+        name: defs.lantern.name,
+        cost: defs.lantern.cost,
+        sprite: defs.lantern.sprite,
+        hint: `+${defs.lantern.answerBonus} energy on every correct answer`,
+      },
+      {
+        kind: "gargoyle",
+        name: defs.gargoyle.name,
+        cost: defs.gargoyle.cost,
+        sprite: defs.gargoyle.sprite,
+        hint: "Shoots soul bolts down its lane",
+      },
+      {
+        kind: "coffin",
+        name: defs.coffin.name,
+        cost: defs.coffin.cost,
+        sprite: defs.coffin.sprite,
+        hint: "A sturdy wall. Wraiths fly over it",
+      },
+      {
+        kind: "rune",
+        name: defs.rune.name,
+        cost: defs.rune.cost,
+        sprite: defs.rune.sprite,
+        hint: "Slows ghosts that walk over it",
+      },
+      {
+        kind: "bell",
+        name: defs.bell.name,
+        cost: defs.bell.cost,
+        sprite: defs.bell.sprite,
+        hint: `Hits every ghost. Unlock with a ${defs.bell.unlockStreak}-answer streak`,
+      },
     ];
-    this.hud = new Hud(d.config.rules.lives);
+    this.hud = new Hud(d.config.rules.lives, {
+      onPause: () => {
+        if (!this.state.paused && !this.ended) this.togglePause();
+      },
+      onSettings: () => this.openSettings(),
+    });
     this.shop = new Shop(items, (k) => this.select(k));
     this.book = new Spellbook({ onAnswer: (c) => this.answer(c), onSkip: () => this.skip() });
     this.root = document.createElement("div");
     this.root.className = "battle";
-    this.root.append(this.hud.root, this.shop.root, this.book.root);
+    this.root.append(this.hud.root, this.hud.controls, this.shop.root, this.book.root);
     d.uiRoot.append(this.root);
     this.bindInput();
     this.nextQuestion();
@@ -166,11 +204,28 @@ export class Battle {
     } else {
       this.pending.push({ type: "pause" });
       this.root.classList.add("paused");
-      this.d.screens.pause(
-        () => this.togglePause(),
-        () => this.exit("title"),
-      );
+      this.showPauseMenu();
     }
+  }
+
+  private showPauseMenu(): void {
+    this.d.screens.pause({
+      onResume: () => this.togglePause(),
+      onRestart: () => this.exit("retry"),
+      onSettings: () => this.openSettings(),
+      onQuit: () => this.exit("title"),
+    });
+  }
+
+  /** Settings always open over a paused game, and "Done" returns to the pause menu. */
+  private openSettings(): void {
+    if (this.ended) return;
+    if (!this.state.paused) {
+      this.pending.push({ type: "pause" });
+      this.root.classList.add("paused");
+    }
+    this.d.audio.play("ui_click");
+    this.d.screens.settings(this.d.settingsUi, () => this.showPauseMenu());
   }
 
   // ---------- quiz ----------
@@ -189,13 +244,19 @@ export class Battle {
     const q = this.question;
     if (!q || this.book.isLocked || this.state.paused || this.ended) return;
     const ms = performance.now() - this.shownAt;
-    const result = this.quiz.submit(q, choice, ms, { boss: this.questionBoss, fastMs: this.d.config.rules.fastMs });
+    const result = this.quiz.submit(q, choice, ms, {
+      boss: this.questionBoss,
+      fastMs: this.d.config.rules.fastMs,
+    });
     this.pending.push({ type: "answer", result });
     // Wrong answers reveal now; correct ones reveal when the sim confirms the energy gained.
     if (!result.correct) this.book.reveal(q, choice, 0);
     this.d.audio.play(result.correct ? "answer_correct" : "answer_wrong");
     clearTimeout(this.nextTimer);
-    this.nextTimer = window.setTimeout(() => this.nextQuestion(), result.correct ? REVEAL_MS.right : REVEAL_MS.wrong);
+    this.nextTimer = window.setTimeout(
+      () => this.nextQuestion(),
+      result.correct ? REVEAL_MS.right : REVEAL_MS.wrong,
+    );
   }
 
   private skip(): void {
@@ -233,7 +294,9 @@ export class Battle {
     }
     this.d.scene.setPlacement(
       this.selected,
-      (lane, col) => this.selected !== null && placementProblem(this.state, this.d.config, this.selected, lane, col) === null,
+      (lane, col) =>
+        this.selected !== null &&
+        placementProblem(this.state, this.d.config, this.selected, lane, col) === null,
       this.hover,
     );
     this.refreshUi();
@@ -245,9 +308,15 @@ export class Battle {
     for (const e of events) {
       switch (e.type) {
         case "answered":
-          if (e.result.correct) this.book.reveal(this.question ?? this.d.pack.questions[0]!, this.question?.answer ?? 0, e.energyGained);
+          if (e.result.correct)
+            this.book.reveal(
+              this.question ?? this.d.pack.questions[0]!,
+              this.question?.answer ?? 0,
+              e.energyGained,
+            );
           this.book.setStreak(e.streak, this.d.config.defenders.bell.unlockStreak);
-          if (e.result.correct && e.streak >= 2) a.play("streak_bonus", { volume: 0.5, pitch: 1 + Math.min(e.streak, 8) * 0.03 });
+          if (e.result.correct && e.streak >= 2)
+            a.play("streak_bonus", { volume: 0.5, pitch: 1 + Math.min(e.streak, 8) * 0.03 });
           break;
         case "energyChanged":
           if (e.cause === "answer") a.play("energy_collect", { volume: 0.7 });
@@ -293,7 +362,11 @@ export class Battle {
           break;
         case "gateBreached":
           a.play("gate_damage");
-          this.d.screens.toast(e.lives > 0 ? `A ghost slipped through! ${e.lives} ${e.lives === 1 ? "life" : "lives"} left` : "The gate has fallen!");
+          this.d.screens.toast(
+            e.lives > 0
+              ? `A ghost slipped through! ${e.lives} ${e.lives === 1 ? "life" : "lives"} left`
+              : "The gate has fallen!",
+          );
           break;
         case "bellRang":
           a.play("bell_toll");
@@ -308,7 +381,10 @@ export class Battle {
           if (!this.book.isLocked) this.nextQuestion();
           break;
         case "waveStarting":
-          this.d.screens.showBanner(`Wave ${e.index + 1} / ${e.count}`, e.index === 0 ? "Answer questions to earn energy, then place defenders" : "Get ready…");
+          this.d.screens.showBanner(
+            `Wave ${e.index + 1} / ${e.count}`,
+            e.index === 0 ? "Answer questions to earn energy, then place defenders" : "Get ready…",
+          );
           break;
         case "waveStarted":
           void a.sting("sting_wave_start");
@@ -327,7 +403,14 @@ export class Battle {
 
   private refreshUi(): void {
     const s = this.state;
-    this.hud.update({ wave: s.wave.index + 1, waves: s.wave.count, energy: s.energy, lives: s.lives, maxLives: this.d.config.rules.lives, levelName: this.levelName });
+    this.hud.update({
+      wave: s.wave.index + 1,
+      waves: s.wave.count,
+      energy: s.energy,
+      lives: s.lives,
+      maxLives: this.d.config.rules.lives,
+      levelName: this.levelName,
+    });
     this.shop.update({
       energy: s.energy,
       selected: this.selected,
@@ -347,14 +430,30 @@ export class Battle {
       .map((id) => this.quiz.byId(id))
       .filter((q): q is Question => q !== undefined)
       .map((q) => ({ prompt: q.prompt, answer: q.choices[q.answer], explain: q.explain }));
+    const before = loadProgress()[this.d.levelId]?.stars ?? 0;
+    const stars = starsFor(won, e.accuracy);
+    recordResult(this.d.levelId, won, e.accuracy);
     const levels = this.d.config.levels;
     const hasNext = levels.findIndex((l) => l.id === this.d.levelId) < levels.length - 1;
     setTimeout(() => {
       this.d.screens.end(
-        { won, accuracy: e.accuracy, correct: e.correct, wrong: e.wrong, kills: e.kills, missed },
+        {
+          won,
+          accuracy: e.accuracy,
+          correct: e.correct,
+          wrong: e.wrong,
+          kills: e.kills,
+          missed,
+          stars,
+          newBest: stars > before,
+        },
         [
           ...(won && hasNext ? [{ label: "Next level", primary: true, run: () => this.exit("next") }] : []),
-          { label: won ? "Play again" : "Try again", primary: !won || !hasNext, run: () => this.exit("retry") },
+          {
+            label: won ? "Play again" : "Try again",
+            primary: !won || !hasNext,
+            run: () => this.exit("retry"),
+          },
           { label: "Title", run: () => this.exit("title") },
         ],
       );

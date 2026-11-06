@@ -11,6 +11,7 @@ import { loadGameConfig } from "../sim/load";
 import { Screens } from "../ui/screens";
 import { Battle } from "./battle";
 import { loadAssets } from "./assets";
+import { loadProgress, SettingsStore } from "./settings";
 
 async function boot(): Promise<void> {
   const canvas = document.querySelector<HTMLCanvasElement>("#scene");
@@ -35,6 +36,28 @@ async function boot(): Promise<void> {
   const sfxReady = audio.loadSfx().catch((e: unknown) => console.warn("Sound effects failed to load", e));
   window.addEventListener("resize", () => scene.resize());
 
+  const settings = new SettingsStore();
+  // Base levels keep music under the effects; the sliders scale them.
+  settings.onChange((s) => {
+    audio.setVolumes(s.sfx * 0.8, s.music * 0.55);
+    scene.shakeScale = s.shake ? 1 : 0;
+  });
+  const settingsUi = {
+    get: () => settings.get(),
+    set: (p: Partial<ReturnType<SettingsStore["get"]>>) => settings.set(p),
+    preview: () => audio.play("ui_click"),
+  };
+
+  // Painted foreground foliage along the bottom edge, once that (optional) art exists.
+  if (assets.has("backgrounds/fg_foliage_bottom")) {
+    const art = assets.art("backgrounds/fg_foliage_bottom");
+    const fol = document.createElement("img");
+    fol.className = "foliage";
+    fol.src = art.url;
+    fol.alt = "";
+    uiRoot.prepend(fol);
+  }
+
   // Idle backdrop behind the title screen.
   let idle = true;
   let last = performance.now();
@@ -48,7 +71,8 @@ async function boot(): Promise<void> {
   requestAnimationFrame(idleLoop);
 
   let current: Battle | null = null;
-  const start = async (levelId: string, calm: boolean) => {
+  const start = async (levelId: string) => {
+    const calm = settings.get().calm;
     await audio.unlock();
     await sfxReady;
     audio.play("gate_open", { volume: 0.7 });
@@ -65,11 +89,12 @@ async function boot(): Promise<void> {
       audio,
       screens,
       uiRoot,
+      settingsUi,
       onExit: (next) => {
         current = null;
         const i = config.levels.findIndex((l) => l.id === levelId);
-        if (next === "retry") void start(levelId, calm);
-        else if (next === "next" && config.levels[i + 1]) void start(config.levels[i + 1]!.id, calm);
+        if (next === "retry") void start(levelId);
+        else if (next === "next" && config.levels[i + 1]) void start(config.levels[i + 1]!.id);
         else showTitle();
       },
     });
@@ -80,8 +105,27 @@ async function boot(): Promise<void> {
     last = performance.now();
     requestAnimationFrame(idleLoop);
     void audio.playMusic("music_menu");
-    screens.title(config.levels, (id, calm) => void start(id, calm));
+    showMenu();
   };
+  const click = () => audio.play("ui_click", { volume: 0.7 });
+  const showMenu = () =>
+    screens.title({
+      levels: config.levels,
+      progress: loadProgress(),
+      onPlay: (id) => void start(id),
+      onHowTo: () => {
+        click();
+        screens.howTo(showMenu);
+      },
+      onSettings: () => {
+        click();
+        screens.settings(settingsUi, showMenu);
+      },
+      onCredits: () => {
+        click();
+        screens.credits(showMenu);
+      },
+    });
   // Browsers start audio muted until the first click or key press.
   // Debug handle for tests and the console: window.gg.battle.state
   (window as unknown as { gg: unknown }).gg = {
@@ -93,7 +137,6 @@ async function boot(): Promise<void> {
   window.addEventListener("pointerdown", wake, { once: true });
   window.addEventListener("keydown", wake, { once: true });
   showTitle();
-  void current;
 }
 
 boot().catch((err: unknown) => {
