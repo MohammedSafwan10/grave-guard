@@ -1,0 +1,1164 @@
+{
+  "levels": [
+    {
+      "id": "hollow-1",
+      "name": "Moonbloom Hollow",
+      "waves": [
+        {
+          "spawns": [
+            {
+              "atSec": 0,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 9.1,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 18.5,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 27,
+              "lane": 1,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.5,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 8.2,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 14.5,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 21.5,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 28.2,
+              "lane": 4,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 1.4,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 7.2,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 14.8,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 21,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 29.1,
+              "lane": 4,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 1.3,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 5.7,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 11.8,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 16.9,
+              "lane": 1,
+              "kind": "shade"
+            },
+            {
+              "atSec": 22.6,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 26.7,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 32.9,
+              "lane": 4,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.4,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 5.4,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 11.1,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 17.3,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 21.5,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 27.2,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 32.2,
+              "lane": 0,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 1.1,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 5.9,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 10,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 15.2,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 20.1,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 25.1,
+              "lane": 0,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 29.4,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 34.7,
+              "lane": 3,
+              "kind": "wisp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hollow-2",
+      "name": "Whispering Crypts",
+      "waves": [
+        {
+          "spawns": [
+            {
+              "atSec": 0.9,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 7,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 12.2,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 18.9,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 25.3,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 30.8,
+              "lane": 2,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 1,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 7.1,
+              "lane": 3,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 14.8,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 21.8,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 29.2,
+              "lane": 2,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 5.4,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 11.1,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 14.8,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 20,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 25.7,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 29.7,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 34.3,
+              "lane": 1,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.4,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 4,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 8.5,
+              "lane": 1,
+              "kind": "shade"
+            },
+            {
+              "atSec": 11.9,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 15.6,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 19.4,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 23.3,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 26.9,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 30,
+              "lane": 3,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 32.9,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 37.5,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 41,
+              "lane": 4,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.3,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 3.2,
+              "lane": 4,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 7,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 9.3,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 13.5,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 16.3,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 19.9,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 22.6,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 25.3,
+              "lane": 0,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 28.5,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 31.3,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 34.4,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 37.5,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 41,
+              "lane": 0,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.2,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 4,
+              "lane": 3,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 8.2,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 10.1,
+              "lane": 1,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 13.7,
+              "lane": 2,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 17.9,
+              "lane": 0,
+              "kind": "shade"
+            },
+            {
+              "atSec": 20.7,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 24.1,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 27.9,
+              "lane": 1,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 30.8,
+              "lane": 2,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 34.4,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 37.7,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 40.4,
+              "lane": 4,
+              "kind": "wisp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hollow-3",
+      "name": "The Lich's Garden",
+      "waves": [
+        {
+          "spawns": [
+            {
+              "atSec": 0.1,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 3.6,
+              "lane": 0,
+              "kind": "shade"
+            },
+            {
+              "atSec": 7.2,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 9.5,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 12.6,
+              "lane": 1,
+              "kind": "shade"
+            },
+            {
+              "atSec": 16.3,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 18.9,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 21.7,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 24.3,
+              "lane": 2,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.9,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 3.6,
+              "lane": 0,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 6.5,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 9.7,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 11.6,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 14.2,
+              "lane": 0,
+              "kind": "shade"
+            },
+            {
+              "atSec": 17,
+              "lane": 4,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 20.7,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 22.7,
+              "lane": 1,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 26.5,
+              "lane": 3,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.1,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 3,
+              "lane": 3,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 5.3,
+              "lane": 4,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 7,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 8.8,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 11.7,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 13.2,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 14.7,
+              "lane": 3,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 17.5,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 18.5,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 20.8,
+              "lane": 1,
+              "kind": "shade"
+            },
+            {
+              "atSec": 23.7,
+              "lane": 3,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 24.7,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 28.1,
+              "lane": 0,
+              "kind": "shade"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.6,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 1.8,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 3.8,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 6,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 7.4,
+              "lane": 1,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 8.1,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 9.8,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 12.1,
+              "lane": 0,
+              "kind": "shade"
+            },
+            {
+              "atSec": 13.9,
+              "lane": 3,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 15,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 16.4,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 17.3,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 19.9,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 21.2,
+              "lane": 0,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 23.3,
+              "lane": 1,
+              "kind": "shade"
+            },
+            {
+              "atSec": 25,
+              "lane": 0,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 25.8,
+              "lane": 2,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 27.8,
+              "lane": 0,
+              "kind": "wraith"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 0.7,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 1.2,
+              "lane": 3,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 2.4,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 4.2,
+              "lane": 1,
+              "kind": "shade"
+            },
+            {
+              "atSec": 4.8,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 6.5,
+              "lane": 1,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 8,
+              "lane": 2,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 9,
+              "lane": 3,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 9.6,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 10.7,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 11.9,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 12.3,
+              "lane": 0,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 14.7,
+              "lane": 1,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 14.8,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 16.4,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 17.6,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 18.6,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 19.3,
+              "lane": 1,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 21,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 22.3,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 22.8,
+              "lane": 4,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 23.8,
+              "lane": 1,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 24.9,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 25.9,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 27.4,
+              "lane": 1,
+              "kind": "wisp"
+            }
+          ]
+        },
+        {
+          "spawns": [
+            {
+              "atSec": 1.3,
+              "lane": 3,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 1.4,
+              "lane": 2,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 1.4,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 2.8,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 3.3,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 3.5,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 4,
+              "lane": 3,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 5.4,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 5.9,
+              "lane": 2,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 6,
+              "lane": 2,
+              "kind": "lich"
+            },
+            {
+              "atSec": 6.5,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 6.6,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 7.8,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 8.8,
+              "lane": 4,
+              "kind": "shade"
+            },
+            {
+              "atSec": 9.3,
+              "lane": 3,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 9.6,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 9.8,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 11.3,
+              "lane": 0,
+              "kind": "shade"
+            },
+            {
+              "atSec": 11.5,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 11.7,
+              "lane": 2,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 12.1,
+              "lane": 2,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 12.9,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 13.9,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 14.7,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 15.6,
+              "lane": 1,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 16.3,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 16.7,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 17.3,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 18.2,
+              "lane": 3,
+              "kind": "shade"
+            },
+            {
+              "atSec": 19,
+              "lane": 4,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 19.4,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 20.4,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 20.8,
+              "lane": 0,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 21.6,
+              "lane": 1,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 21.7,
+              "lane": 2,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 22.4,
+              "lane": 2,
+              "kind": "shade"
+            },
+            {
+              "atSec": 23.6,
+              "lane": 1,
+              "kind": "wraith"
+            },
+            {
+              "atSec": 23.7,
+              "lane": 3,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 25,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 25.1,
+              "lane": 1,
+              "kind": "shade"
+            },
+            {
+              "atSec": 25.6,
+              "lane": 0,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 26.6,
+              "lane": 4,
+              "kind": "boneKnight"
+            },
+            {
+              "atSec": 26.9,
+              "lane": 4,
+              "kind": "wisp"
+            },
+            {
+              "atSec": 27.4,
+              "lane": 1,
+              "kind": "wraith"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

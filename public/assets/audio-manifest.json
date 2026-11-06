@@ -1,0 +1,234 @@
+{
+  "music": {
+    "music_menu": {
+      "url": "/assets/audio/music/music_menu.mp3",
+      "loop": true,
+      "seconds": 144.0,
+      "match": 0.744,
+      "cutStart": 11.38,
+      "cutEnd": 155.38
+    },
+    "music_battle": {
+      "url": "/assets/audio/music/music_battle.mp3",
+      "loop": true,
+      "seconds": 157.1,
+      "match": 0.694,
+      "cutStart": 1.86,
+      "cutEnd": 158.96
+    },
+    "music_boss": {
+      "url": "/assets/audio/music/music_boss.mp3",
+      "loop": true,
+      "seconds": 162.95,
+      "match": 0.62,
+      "cutStart": 0.23,
+      "cutEnd": 163.18
+    },
+    "music_calm": {
+      "url": "/assets/audio/music/music_calm.mp3",
+      "loop": true,
+      "seconds": 152.02,
+      "match": 0.74,
+      "cutStart": 13.93,
+      "cutEnd": 165.95
+    },
+    "sting_wave_start": {
+      "url": "/assets/audio/music/sting_wave_start.mp3",
+      "loop": false,
+      "seconds": 4.0
+    },
+    "sting_boss_intro": {
+      "url": "/assets/audio/music/sting_boss_intro.mp3",
+      "loop": false,
+      "seconds": 6.7
+    },
+    "sting_victory": {
+      "url": "/assets/audio/music/sting_victory.mp3",
+      "loop": false,
+      "seconds": 7.8
+    },
+    "sting_defeat": {
+      "url": "/assets/audio/music/sting_defeat.mp3",
+      "loop": false,
+      "seconds": 4.4
+    }
+  },
+  "sfx": {
+    "answer_correct": {
+      "url": "/assets/audio/sfx/answer_correct.mp3",
+      "seconds": 0.54
+    },
+    "answer_wrong": {
+      "url": "/assets/audio/sfx/answer_wrong.mp3",
+      "seconds": 0.1
+    },
+    "armor_hit_1": {
+      "url": "/assets/audio/sfx/armor_hit_1.mp3",
+      "seconds": 0.37
+    },
+    "armor_hit_2": {
+      "url": "/assets/audio/sfx/armor_hit_2.mp3",
+      "seconds": 0.25
+    },
+    "bell_toll": {
+      "url": "/assets/audio/sfx/bell_toll.mp3",
+      "seconds": 1.48
+    },
+    "bell_toll_alt": {
+      "url": "/assets/audio/sfx/bell_toll_alt.mp3",
+      "seconds": 0.7
+    },
+    "bolt_hit_1": {
+      "url": "/assets/audio/sfx/bolt_hit_1.mp3",
+      "seconds": 0.12
+    },
+    "bolt_hit_2": {
+      "url": "/assets/audio/sfx/bolt_hit_2.mp3",
+      "seconds": 0.18
+    },
+    "bone_knight_step_1": {
+      "url": "/assets/audio/sfx/bone_knight_step_1.mp3",
+      "seconds": 0.1
+    },
+    "bone_knight_step_2": {
+      "url": "/assets/audio/sfx/bone_knight_step_2.mp3",
+      "seconds": 0.1
+    },
+    "bone_knight_step_3": {
+      "url": "/assets/audio/sfx/bone_knight_step_3.mp3",
+      "seconds": 0.11
+    },
+    "book_close": {
+      "url": "/assets/audio/sfx/book_close.mp3",
+      "seconds": 0.23
+    },
+    "book_open": {
+      "url": "/assets/audio/sfx/book_open.mp3",
+      "seconds": 0.15
+    },
+    "boss_arrive_rumble": {
+      "url": "/assets/audio/sfx/boss_arrive_rumble.mp3",
+      "seconds": 2.0
+    },
+    "boss_shield_break": {
+      "url": "/assets/audio/sfx/boss_shield_break.mp3",
+      "seconds": 0.24
+    },
+    "coffin_break": {
+      "url": "/assets/audio/sfx/coffin_break.mp3",
+      "seconds": 0.78
+    },
+    "coffin_hit_1": {
+      "url": "/assets/audio/sfx/coffin_hit_1.mp3",
+      "seconds": 0.31
+    },
+    "coffin_hit_2": {
+      "url": "/assets/audio/sfx/coffin_hit_2.mp3",
+      "seconds": 0.31
+    },
+    "energy_collect_1": {
+      "url": "/assets/audio/sfx/energy_collect_1.mp3",
+      "seconds": 0.28
+    },
+    "energy_collect_2": {
+      "url": "/assets/audio/sfx/energy_collect_2.mp3",
+      "seconds": 0.12
+    },
+    "energy_collect_3": {
+      "url": "/assets/audio/sfx/energy_collect_3.mp3",
+      "seconds": 0.12
+    },
+    "gargoyle_shoot_1": {
+      "url": "/assets/audio/sfx/gargoyle_shoot_1.mp3",
+      "seconds": 0.24
+    },
+    "gargoyle_shoot_2": {
+      "url": "/assets/audio/sfx/gargoyle_shoot_2.mp3",
+      "seconds": 0.24
+    },
+    "gargoyle_shoot_3": {
+      "url": "/assets/audio/sfx/gargoyle_shoot_3.mp3",
+      "seconds": 0.34
+    },
+    "gate_damage": {
+      "url": "/assets/audio/sfx/gate_damage.mp3",
+      "seconds": 0.16
+    },
+    "gate_open": {
+      "url": "/assets/audio/sfx/gate_open.mp3",
+      "seconds": 0.92
+    },
+    "ghost_death_1": {
+      "url": "/assets/audio/sfx/ghost_death_1.mp3",
+      "seconds": 0.54
+    },
+    "ghost_death_2": {
+      "url": "/assets/audio/sfx/ghost_death_2.mp3",
+      "seconds": 0.54
+    },
+    "ghost_hit_1": {
+      "url": "/assets/audio/sfx/ghost_hit_1.mp3",
+      "seconds": 0.23
+    },
+    "ghost_hit_2": {
+      "url": "/assets/audio/sfx/ghost_hit_2.mp3",
+      "seconds": 0.21
+    },
+    "page_flip_1": {
+      "url": "/assets/audio/sfx/page_flip_1.mp3",
+      "seconds": 0.77
+    },
+    "page_flip_2": {
+      "url": "/assets/audio/sfx/page_flip_2.mp3",
+      "seconds": 0.43
+    },
+    "page_flip_3": {
+      "url": "/assets/audio/sfx/page_flip_3.mp3",
+      "seconds": 0.23
+    },
+    "place_defender_1": {
+      "url": "/assets/audio/sfx/place_defender_1.mp3",
+      "seconds": 0.94
+    },
+    "place_defender_2": {
+      "url": "/assets/audio/sfx/place_defender_2.mp3",
+      "seconds": 0.87
+    },
+    "remove_defender": {
+      "url": "/assets/audio/sfx/remove_defender.mp3",
+      "seconds": 0.19
+    },
+    "reward_coins": {
+      "url": "/assets/audio/sfx/reward_coins.mp3",
+      "seconds": 0.85
+    },
+    "salt_rune_slow": {
+      "url": "/assets/audio/sfx/salt_rune_slow.mp3",
+      "seconds": 0.95
+    },
+    "streak_bonus": {
+      "url": "/assets/audio/sfx/streak_bonus.mp3",
+      "seconds": 0.49
+    },
+    "ui_back": {
+      "url": "/assets/audio/sfx/ui_back.mp3",
+      "seconds": 0.06
+    },
+    "ui_cant_afford": {
+      "url": "/assets/audio/sfx/ui_cant_afford.mp3",
+      "seconds": 0.16
+    },
+    "ui_click": {
+      "url": "/assets/audio/sfx/ui_click.mp3",
+      "seconds": 0.1
+    },
+    "ui_hover": {
+      "url": "/assets/audio/sfx/ui_hover.mp3",
+      "seconds": 0.05
+    },
+    "wave_start_creak": {
+      "url": "/assets/audio/sfx/wave_start_creak.mp3",
+      "seconds": 0.66
+    }
+  }
+}

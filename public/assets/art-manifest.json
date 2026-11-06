@@ -1,0 +1,450 @@
+{
+  "backgrounds/bg_far_hills": {
+    "url": "/assets/backgrounds/bg_far_hills.webp",
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "bytes": 171126
+  },
+  "backgrounds/bg_sky": {
+    "url": "/assets/backgrounds/bg_sky.webp",
+    "width": 1536,
+    "height": 1024,
+    "aspect": 1.5,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": false,
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "bytes": 87528
+  },
+  "backgrounds/fg_gate_left": {
+    "url": "/assets/backgrounds/fg_gate_left.webp",
+    "width": 1024,
+    "height": 1335,
+    "aspect": 0.767,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "bytes": 443578
+  },
+  "textures/tex_grass": {
+    "url": "/assets/textures/tex_grass.webp",
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1.0,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": false,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 178416
+  },
+  "textures/tex_tile_stone": {
+    "url": "/assets/textures/tex_tile_stone.webp",
+    "width": 1024,
+    "height": 1024,
+    "aspect": 1.0,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": false,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 146184
+  },
+  "defenders/def_bell": {
+    "url": "/assets/defenders/def_bell.webp",
+    "width": 437,
+    "height": 512,
+    "aspect": 0.8535,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 87316
+  },
+  "defenders/def_coffin": {
+    "url": "/assets/defenders/def_coffin.webp",
+    "width": 317,
+    "height": 512,
+    "aspect": 0.6191,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 54472
+  },
+  "defenders/def_gargoyle": {
+    "url": "/assets/defenders/def_gargoyle.webp",
+    "width": 471,
+    "height": 512,
+    "aspect": 0.9199,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 90600
+  },
+  "defenders/def_lantern": {
+    "url": "/assets/defenders/def_lantern.webp",
+    "width": 288,
+    "height": 512,
+    "aspect": 0.5625,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 45854
+  },
+  "defenders/def_salt_rune": {
+    "url": "/assets/defenders/def_salt_rune.webp",
+    "width": 512,
+    "height": 473,
+    "aspect": 1.0825,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 136384
+  },
+  "enemies/enemy_bone_knight": {
+    "url": "/assets/enemies/enemy_bone_knight.webp",
+    "width": 512,
+    "height": 437,
+    "aspect": 1.1716,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 58830
+  },
+  "enemies/enemy_lich": {
+    "url": "/assets/enemies/enemy_lich.webp",
+    "width": 721,
+    "height": 768,
+    "aspect": 0.9388,
+    "anchor": [
+      0.5,
+      1.0
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 225784
+  },
+  "enemies/enemy_shade": {
+    "url": "/assets/enemies/enemy_shade.webp",
+    "width": 512,
+    "height": 252,
+    "aspect": 2.0317,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1261,
+      1247
+    ],
+    "bytes": 51332
+  },
+  "enemies/enemy_wisp": {
+    "url": "/assets/enemies/enemy_wisp.webp",
+    "width": 512,
+    "height": 285,
+    "aspect": 1.7965,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1261,
+      1247
+    ],
+    "bytes": 33714
+  },
+  "enemies/enemy_wraith": {
+    "url": "/assets/enemies/enemy_wraith.webp",
+    "width": 512,
+    "height": 449,
+    "aspect": 1.1403,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 75676
+  },
+  "vfx/vfx_energy_orb": {
+    "url": "/assets/vfx/vfx_energy_orb.webp",
+    "width": 167,
+    "height": 256,
+    "aspect": 0.6523,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 15734
+  },
+  "vfx/vfx_soul_bolt": {
+    "url": "/assets/vfx/vfx_soul_bolt.webp",
+    "width": 256,
+    "height": 98,
+    "aspect": 2.6122,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1262,
+      1246
+    ],
+    "bytes": 14354
+  },
+  "ui/icon_heart_empty": {
+    "url": "/assets/ui/icon_heart_empty.webp",
+    "width": 256,
+    "height": 235,
+    "aspect": 1.0894,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 16930
+  },
+  "ui/icon_heart_full": {
+    "url": "/assets/ui/icon_heart_full.webp",
+    "width": 256,
+    "height": 228,
+    "aspect": 1.1228,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 19736
+  },
+  "ui/icon_lock": {
+    "url": "/assets/ui/icon_lock.webp",
+    "width": 194,
+    "height": 256,
+    "aspect": 0.7578,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 23106
+  },
+  "ui/icon_soul_gem": {
+    "url": "/assets/ui/icon_soul_gem.webp",
+    "width": 147,
+    "height": 256,
+    "aspect": 0.5742,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 12546
+  },
+  "ui/icon_star_empty": {
+    "url": "/assets/ui/icon_star_empty.webp",
+    "width": 256,
+    "height": 242,
+    "aspect": 1.0579,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 21486
+  },
+  "ui/icon_star_full": {
+    "url": "/assets/ui/icon_star_full.webp",
+    "width": 256,
+    "height": 241,
+    "aspect": 1.0622,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bytes": 26432
+  },
+  "ui/ui_answer_button": {
+    "url": "/assets/ui/ui_answer_button.webp",
+    "width": 1024,
+    "height": 303,
+    "aspect": 3.3795,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      2172,
+      724
+    ],
+    "bytes": 48866
+  },
+  "ui/ui_hud_plaque": {
+    "url": "/assets/ui/ui_hud_plaque.webp",
+    "width": 1024,
+    "height": 270,
+    "aspect": 3.7926,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      2172,
+      724
+    ],
+    "bytes": 54678
+  },
+  "ui/ui_logo": {
+    "url": "/assets/ui/ui_logo.webp",
+    "width": 1280,
+    "height": 452,
+    "aspect": 2.8319,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "bytes": 167116
+  },
+  "ui/ui_shop_card": {
+    "url": "/assets/ui/ui_shop_card.webp",
+    "width": 699,
+    "height": 1024,
+    "aspect": 0.6826,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "bytes": 131044
+  },
+  "ui/ui_spellbook": {
+    "url": "/assets/ui/ui_spellbook.webp",
+    "width": 1024,
+    "height": 1536,
+    "aspect": 0.6667,
+    "anchor": [
+      0.5,
+      0.5
+    ],
+    "transparent": true,
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "bytes": 343308
+  }
+}

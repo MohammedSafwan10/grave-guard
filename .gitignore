@@ -1,0 +1,16 @@
+﻿node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Raw Kenney packs (re-downloadable). Originals in assets-src/art, music, sfx ARE committed.
+assets-src/kenney/
+
+# IMPORTANT: never ignore .kiro/ - the hackathon requires it in the repo.
+
+
+test-results/
+playwright-report/
+e2e-shots/
+vite.log

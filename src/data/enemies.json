@@ -1,0 +1,30 @@
+{
+  "wisp": { "name": "Wisp", "hp": 100, "speed": 0.35, "biteDps": 20, "floats": true, "sprite": "enemies/enemy_wisp" },
+  "shade": { "name": "Shade", "hp": 60, "speed": 0.8, "biteDps": 15, "floats": true, "sprite": "enemies/enemy_shade" },
+  "boneKnight": {
+    "name": "Bone Knight",
+    "hp": 260,
+    "speed": 0.25,
+    "biteDps": 25,
+    "boltArmor": 0.5,
+    "sprite": "enemies/enemy_bone_knight"
+  },
+  "wraith": {
+    "name": "Wraith",
+    "hp": 140,
+    "speed": 0.4,
+    "biteDps": 20,
+    "floats": true,
+    "flies": true,
+    "sprite": "enemies/enemy_wraith"
+  },
+  "lich": {
+    "name": "The Lich",
+    "hp": 1500,
+    "speed": 0.15,
+    "biteDps": 50,
+    "boss": true,
+    "shieldReturnSec": 20,
+    "sprite": "enemies/enemy_lich"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "reference": "docs/concept/concept_main.png",
+  "tool": "Built-in image_gen",
+  "date": "2026-11-06",
+  "records": [
+    {
+      "file": "defenders/def_gargoyle.png",
+      "prompt": "Use case: stylized-concept. Generate ONE production game sprite, not a screenshot. Image 1 is STYLE REFERENCE ONLY: match Moonbloom Hollow's richly painted cozy-spooky 3D-like shading, grey-violet stone, amber rim light and cool moonlight from upper left. Subject: small brave owl-like winged stone GARGOYLE, crouching on a little square carved pedestal, wings half open, glowing amber eyes, determined charming expression, weathered violet-grey stone with tiny moss accents. Full body and base visible, centered with 10% margin, three-quarter view slightly from above, clearly FACING RIGHT, beak and gaze right. Real transparent background, no ground plane, no cast ground shadow, no text, no card frame, no other objects. Square 1024x1024 intended asset."
+    },
+    {
+      "file": "defenders/def_lantern.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-56d9a1e0-725b-4b82-9b50-465c0eaec24e.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square sprite. One small elegant glass SOUL LANTERN, ornate bronze cap, ring handle and round bronze base, bright cyan soul flame curling inside clear glass. Match reference lantern. Centered whole object 12% margin, slightly elevated 3/4 view. Real transparent background, no ground or cast shadow, no text."
+    },
+    {
+      "file": "defenders/def_coffin.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-ba4baae1-9c01-4126-bd80-e36e7e3fa8d6.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square sprite. One upright standing heavy coffin of dark polished purple wood with gold metal corner trim, engraved gold lily ornament centered on lid, subtle scratches. Front-right three-quarter elevated view matching reference board coffin, full object and 12% margin. Real transparency, no ground shadow, no text."
+    },
+    {
+      "file": "defenders/def_salt_rune.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-4c1a6ad0-c1db-4522-9b5a-041cbbc13d62.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square sprite. ONE circular salt rune viewed DIRECTLY TOP DOWN: glowing white-lavender salt ring, four-pointed star inside, small abstract marks, few delicate sparkles. Sharp enough at small size. Flat ground decal with NO ground or disk beneath, real transparent background outside lines and INSIDE gaps between lines. No letters or text."
+    },
+    {
+      "file": "defenders/def_bell.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-f39d0b48-fa36-4fec-a6f9-84798a50839f.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square sprite. ONE brass BANSHEE BELL hanging within a little gothic grey-violet stone arch on two feet, pink flowers and ivy winding sides, faint teal magical light at bell rim. Whole silhouette, centered 12% margin, elevated three-quarter view matching reference. Real transparent background, no ground plane or cast shadow, no text."
+    },
+    {
+      "file": "enemies/enemy_wisp.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-67bc47ff-e3e6-4d78-9f4b-ca66c390e5de.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square enemy sprite. ONE small softly rounded white-cyan ghost with two simple dark oval eyes, flowing wispy tail trailing to RIGHT, floating toward LEFT. Mischievous mysterious, not evil, elegant silhouette like reference ghost. Entire character 12% margin, see slightly from above, semi-transparent glowing body with clean alpha, no ground, no text."
+    },
+    {
+      "file": "enemies/enemy_shade.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-0825acce-9c8e-4ce7-9f0b-9f4e2215d86b.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square enemy sprite. ONE fast thin streamlined ghost made of dark violet smoke with long wispy tail trailing to RIGHT, body leaning and dashing LEFT, two small glowing magenta eyes. Distinct from rounded cyan ghost: narrow angular silhouette and dark plum body, readable edges. Entire character 12% margin, slightly above 3/4 view, transparent background and translucent smoke, no text or ground."
+    },
+    {
+      "file": "enemies/enemy_bone_knight.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-08c882bf-5e8b-4288-acb5-7779408f4827.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square enemy sprite. ONE full-body ivory skeleton warrior WALKING LEFT, face and sword pointing left, wearing dented dark iron helmet and tattered purple cape, holding round shield with simple gold lily emblem and short sword. Sturdy charming storybook skeleton, no gore. Elevated three-quarter camera matching board, whole feet and sword visible, 12% clear margin. Transparent background, no floor shadow, no text."
+    },
+    {
+      "file": "enemies/enemy_wraith.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-1c1e754b-952c-4f64-a30e-68a222ccb4f1.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square enemy sprite. ONE tall hooded ghost in flowing teal-green cloak, no legs, ragged cloth edges dissolving into mist, long sleeves extended toward LEFT, faint glowing pale-green face under hood. Left-facing movement with trailing robe to right. Tall elegant threatening silhouette, cozy spooky not gruesome. Entire character 12% margin, slightly elevated 3/4 view. Real transparent background, no floor or text."
+    },
+    {
+      "file": "enemies/enemy_lich.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-605ab7f2-4e85-45d5-9b2d-a44c57b6df51.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square boss sprite. ONE full-body tall skeletal sorcerer facing LEFT in rich dark-violet robes with fine gold trim, crooked bone crown, staff tipped glowing cyan crystal, small floating open book close beside his arm, few abstract magical marks. Grand imposing storybook villain without gore, complete staff and robe within 12% safe margin. Slightly elevated 3/4 view matching board. Transparent background, no ground or text."
+    },
+    {
+      "file": "backgrounds/bg_sky.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-a9498d91-a921-4527-8306-548b04ecd232.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Landscape 1536x1024 opaque BACKGROUND LAYER, SKY ONLY. Huge luminous full moon in upper middle, softly curling lavender and indigo clouds moonlit along edges, sparse stars, deep indigo at top softly becoming violet-pink at bottom. Match reference night sky. NO ground, horizon, buildings, trees, characters, interface or text. Full frame to all edges."
+    },
+    {
+      "file": "backgrounds/bg_far_hills.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-0bee6c0b-f7cc-44b8-9e7c-982468ce69ce.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Landscape 1536x1024 distant scenery parallax layer. Rolling dark blue-violet hills, small mausoleums, a little crooked chapel with amber windows, ruined gothic stone arches, bare twisted trees and tall cypress silhouettes, low lavender mist, tiny cyan wisps. Skyline mostly in LOWER HALF of canvas; ALL ABOVE skyline fully transparent, no sky or moon. Muted distant values, gentle depth haze; scenery solid in lower portion to bottom edge. No foreground board, characters or text."
+    },
+    {
+      "file": "backgrounds/fg_gate_left.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-824b139c-aee3-4de1-8491-feeec4d165be.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Portrait 1024x1536 foreground scenery cutout. ONE complete wrought-iron cemetery gate with ornate crescent-moon ironwork, two weathered purple stone pillars, small owl statue on one pillar, warm glowing lantern on other, climbing violet/pink flowers and ivy. Seen from front-right and slightly above to match reference. Entire gate visible with safe margin. Background including spaces BETWEEN bars must be truly transparent. No sky, landscape, floor plane, cast floor shadow or text."
+    },
+    {
+      "file": "textures/tex_tile_stone.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-1e7f9672-851f-4c70-83b2-494f83eb8c4e.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square 1024 texture, perfectly flat direct TOP DOWN, seamless edge-to-edge repeated surface texture for 3D game board. Weathered grey-violet stone, subtle small cracks and moss details, restrained hand-painted soft detail matching reference paving. Single square worn slab spanning entire frame, softly beveled edge, opposing edges match seamlessly. Flat even illumination, no cast shadows, no directional light, no perspective, no objects, no text. Opaque."
+    },
+    {
+      "file": "textures/tex_grass.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-02296aec-fafe-4aac-a80f-c9fe6ac6cbf7.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square 1024 seamless tileable material texture, DIRECT TOP DOWN orthographic. Dense dark teal-green short grass with tiny clover, very few tiny violet flowers and pebbles, restrained hand-painted material matching reference lane grass. Texture continuous to all edges with matching opposing edges, uniform density, flat even illumination. NO terrain edge, border, soil slab, perspective, directional shadow, objects, UI or text. Opaque."
+    },
+    {
+      "file": "vfx/vfx_soul_bolt.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-3c2d7b3f-d7fe-4a90-ac30-384a60face40.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square game VFX cutout. ONE small glowing golden-amber magical bolt flying RIGHT, white-hot pointed core on right, short sparkling comet trail to LEFT. Compact elegant shape, amber gold and few white sparks, subtle bloom fading to transparent. Centered 15% margin, true transparent background, no frame, no scene, no text."
+    },
+    {
+      "file": "vfx/vfx_energy_orb.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-be582b5b-a4fa-4314-96cc-f3545d2a23eb.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square game VFX cutout. ONE floating cyan soul flame orb, bright pale cyan core, translucent teal curling flame edges, very restrained soft glow, few tiny sparks. Compact attractive readable shape centered 15% margin, true transparent background, no container, no ground, no text."
+    },
+    {
+      "file": "ui/ui_logo.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-92ad1b7b-c576-4897-8c1f-6e88c967fbdd.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Landscape 1536x1024 game logo only, transparent background. Exactly two lines: large main title \"GRAVE GUARD\" in carved ivory-gold elegant fantasy serif capitals, smaller subtitle \"MOONBLOOM HOLLOW\" in lavender capitals between two fine swooping flourishes. Small crescent moon and leaves accent title edges. Match reference title, sophisticated not overdecorated. Full lettering centered with 12% transparent margin; no panel, no background scenery, no other words."
+    },
+    {
+      "file": "ui/ui_spellbook.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-a0c05eae-1881-48c4-b39d-af4673321ed3.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Portrait 1024x1536 UI asset. ONE upright old open spellbook front facing, showing ONE large uninterrupted completely BLANK ivory aged parchment writing area, very subtle paper texture. Twisted dark wooden vines and a few pink flowers frame outer edges, small hanging gold crescent charm at top right, purple ribbon bookmark at bottom right. Match reference right sidebar. Reserve at least 75% panel interior as uninterrupted usable blank parchment. No text, drawings, buttons, glyphs, illustrations, logos. Whole object with 7% margin, genuine transparent background outside book; paper opaque."
+    },
+    {
+      "file": "ui/ui_answer_button.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-1eeed7e9-f60b-426a-880a-a538128bf150.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Landscape 1536x1024 UI asset. ONE wide rectangular blank parchment button, width 3 times height, thin carved gold-brown outline, small notched corners, restrained lovely vintage fantasy craftsmanship matching reference answer controls. Completely blank flat light ivory face for HTML text. Front facing orthographic, centered with clear margin, entire border visible, true transparent background outside button. No symbols, words, numbers or scenery."
+    },
+    {
+      "file": "ui/ui_shop_card.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-20e2fb60-3a3f-430a-802f-431e73bc8e31.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Portrait 1024x1536 UI asset. ONE vertical defender card frame of carved dark violet stone, lavender opaque inner panel, softly rounded corners, fine vine carvings. Large upper center BLANK for unit portrait; small empty dark rounded price plate near bottom. Match reference bottom shop card. Front-facing orthographic, entire card 8% margin. No unit, icons, text, numbers or glyphs. True transparent background outside card."
+    },
+    {
+      "file": "ui/ui_hud_plaque.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-bb40804e-ea8b-4fa2-a21a-364a419e199c.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Landscape 1536x1024 UI asset. ONE wide horizontal ornamental HUD plaque, dark navy-violet enamel center, restrained aged gold gothic border and pointed ends, width 4 times height. Center blank and dark, no lettering, numbers, icon or symbol. Front facing orthographic, completely visible, centered safe margin, true transparent background outside plaque. Match reference top wave counter style."
+    },
+    {
+      "file": "ui/icon_soul_gem.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-eecc1b5b-00d6-486d-a908-067a09826a42.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square UI icon. ONE faceted violet-and-cyan crystal gem, elongated hexagonal silhouette, soft inner light, refined painterly bevels matching reference currency. Centered with 15% margin, full silhouette, true transparent background, no text, badge, frame, floor shadow or extra crystals."
+    },
+    {
+      "file": "ui/icon_heart_full.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-aecf411c-4e92-43f9-a5db-4289f339ef6f.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square UI icon. ONE glossy warm red heart-shaped gem, fine gold rim, small ivory highlight upper left, symmetrical front-facing heart silhouette. Premium painterly reference HUD icon, not photorealistic. Centered 15% margin, entire outline visible. True transparent background, no badge, frame, text or ground."
+    },
+    {
+      "file": "ui/icon_heart_empty.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-871c99ce-a702-462e-baea-87accae1d02e.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square UI icon. ONE EMPTY heart-shaped gem: dark grey-violet cracked glass center with dull fine gold rim, small subtle upper-left highlight. Symmetrical front-facing silhouette matching a classic full red game heart icon, but depleted and unlit. Centered 15% margin. True transparent background, no red light, badge, frame, text or ground."
+    },
+    {
+      "file": "ui/icon_star_full.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-85a90224-4cb7-48d3-92d4-c4c0f15d0523.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square UI icon. ONE shiny golden five-pointed star, warm rich gold bevel and soft restrained glow, ivory upper-left highlight, premium painterly sculpted game UI matching reference answer streak stars. Symmetrical front-facing, entire star centered 15% margin. True transparent background, no badge, frame, text or ground."
+    },
+    {
+      "file": "ui/icon_star_empty.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-48b53f87-c4e6-4a0a-82bb-5e2d0825b973.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square UI icon. ONE EMPTY five-pointed star icon: fine dark bronze beveled outline, hollow center truly transparent, subtle lavender highlight on upper-left edge. Symmetrical front facing, premium painterly game UI matching reference gold streak stars but unlit. Centered 15% margin. True transparent background outside AND inside star, no badge, text or ground."
+    },
+    {
+      "file": "ui/icon_lock.png",
+      "source": "C:\\Users\\Thumbeja\\.codex\\generated_images\\01a1af30-ce8b-73c0-815a-b29ca04e2d39\\exec-97862b4e-693e-4e45-bb8d-35944cbdca4f.png",
+      "prompt": "Use case: stylized-concept. Create one production-ready game image asset. Image 1 is STYLE REFERENCE ONLY, not an edit target. Match its polished painterly cozy-spooky fantasy, soft sculpted 3D-like shading, indigo/violet/lavender, warm amber-gold light, cyan-teal magic. Cool upper-left moonlight and soft warm rim light. No recognizable existing franchise characters. Square UI icon. ONE small ornate bronze padlock with arched shackle, small crescent-moon keyhole, dark violet accent inset and subtle warm edge highlights. Friendly gothic painterly game UI, reference material style. Centered whole object 15% clear margin, front-facing. True transparent background, no badge, frame, text or ground."
+    }
+  ],
+  "remaining": []
+}

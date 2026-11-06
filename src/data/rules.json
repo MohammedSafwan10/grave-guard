@@ -1,0 +1,21 @@
+{
+  "lanes": 5,
+  "cols": 9,
+  "spawnX": 8.9,
+  "gateX": -0.6,
+  "blockReach": 0.6,
+  "startEnergy": 150,
+  "correctEnergy": 30,
+  "streakStep": 5,
+  "streakMax": 20,
+  "fastBonus": 10,
+  "fastMs": 5000,
+  "hasteMult": 1.5,
+  "hasteSec": 6,
+  "skipAfterSec": 3,
+  "lives": 3,
+  "refundRatio": 0.5,
+  "firstBreatherSec": 15,
+  "breatherSec": 10,
+  "calmSpeedMult": 0.7
+}

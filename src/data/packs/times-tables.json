@@ -1,0 +1,847 @@
+{
+  "id": "times-tables",
+  "title": "Times Tables",
+  "subject": "Maths",
+  "questions": [
+    {
+      "id": "tt-3x3",
+      "topic": "3 times table",
+      "difficulty": 1,
+      "prompt": "What is 3 × 3?",
+      "choices": [
+        "12",
+        "6",
+        "11",
+        "9"
+      ],
+      "answer": 3,
+      "explain": "3 × 3 = 9. Count 3 groups of 3: 3, 6, 9."
+    },
+    {
+      "id": "tt-3x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 9 × 3?",
+      "choices": [
+        "36",
+        "30",
+        "27",
+        "37"
+      ],
+      "answer": 2,
+      "explain": "9 × 3 = 27. 3 × 10 = 30, minus 3 = 27."
+    },
+    {
+      "id": "tt-5x8",
+      "topic": "8 times table",
+      "difficulty": 2,
+      "prompt": "What is 5 × 8?",
+      "choices": [
+        "48",
+        "40",
+        "35",
+        "45"
+      ],
+      "answer": 1,
+      "explain": "5 × 8 = 40. Half of 8 × 10 (80) is 40."
+    },
+    {
+      "id": "tt-11x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 11?",
+      "choices": [
+        "144",
+        "143",
+        "132",
+        "120"
+      ],
+      "answer": 2,
+      "explain": "12 × 11 = 132. 12 × 10 = 120, plus 12 = 132."
+    },
+    {
+      "id": "tt-10x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 10 × 11?",
+      "choices": [
+        "100",
+        "120",
+        "99",
+        "110"
+      ],
+      "answer": 3,
+      "explain": "10 × 11 = 110. 10 × 10 = 100, plus 10 = 110."
+    },
+    {
+      "id": "tt-4x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 9 × 4?",
+      "choices": [
+        "27",
+        "40",
+        "45",
+        "36"
+      ],
+      "answer": 3,
+      "explain": "9 × 4 = 36. 4 × 10 = 40, minus 4 = 36."
+    },
+    {
+      "id": "tt-5x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 11 × 5?",
+      "choices": [
+        "55",
+        "44",
+        "60",
+        "65"
+      ],
+      "answer": 0,
+      "explain": "11 × 5 = 55. Half of 11 × 10 (110) is 55."
+    },
+    {
+      "id": "tt-11x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 11 × 11?",
+      "choices": [
+        "121",
+        "132",
+        "131",
+        "110"
+      ],
+      "answer": 0,
+      "explain": "11 × 11 = 121. 11 × 10 = 110, plus 11 = 121."
+    },
+    {
+      "id": "tt-5x5",
+      "topic": "5 times table",
+      "difficulty": 1,
+      "prompt": "What is 5 × 5?",
+      "choices": [
+        "20",
+        "15",
+        "30",
+        "25"
+      ],
+      "answer": 3,
+      "explain": "5 × 5 = 25. Half of 5 × 10 (50) is 25."
+    },
+    {
+      "id": "tt-6x6",
+      "topic": "6 times table",
+      "difficulty": 1,
+      "prompt": "What is 6 × 6?",
+      "choices": [
+        "42",
+        "30",
+        "26",
+        "36"
+      ],
+      "answer": 3,
+      "explain": "6 × 6 = 36. Split it: 6 × 5 = 30, plus 6 × 1 = 6, total 36."
+    },
+    {
+      "id": "tt-4x8",
+      "topic": "8 times table",
+      "difficulty": 2,
+      "prompt": "What is 8 × 4?",
+      "choices": [
+        "40",
+        "36",
+        "24",
+        "32"
+      ],
+      "answer": 3,
+      "explain": "8 × 4 = 32. Count 4 groups of 8: 8, 16, 24, 32."
+    },
+    {
+      "id": "tt-5x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 9 × 5?",
+      "choices": [
+        "54",
+        "45",
+        "50",
+        "36"
+      ],
+      "answer": 1,
+      "explain": "9 × 5 = 45. 5 × 10 = 50, minus 5 = 45."
+    },
+    {
+      "id": "tt-6x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 6 × 9?",
+      "choices": [
+        "63",
+        "45",
+        "54",
+        "44"
+      ],
+      "answer": 2,
+      "explain": "6 × 9 = 54. 6 × 10 = 60, minus 6 = 54."
+    },
+    {
+      "id": "tt-3x8",
+      "topic": "8 times table",
+      "difficulty": 2,
+      "prompt": "What is 3 × 8?",
+      "choices": [
+        "16",
+        "32",
+        "21",
+        "24"
+      ],
+      "answer": 3,
+      "explain": "3 × 8 = 24. Count 3 groups of 8: 8, 16, 24."
+    },
+    {
+      "id": "tt-2x2",
+      "topic": "2 times table",
+      "difficulty": 1,
+      "prompt": "What is 2 × 2?",
+      "choices": [
+        "2",
+        "6",
+        "4",
+        "7"
+      ],
+      "answer": 2,
+      "explain": "2 × 2 = 4. Count 2 groups of 2: 2, 4."
+    },
+    {
+      "id": "tt-5x6",
+      "topic": "6 times table",
+      "difficulty": 1,
+      "prompt": "What is 5 × 6?",
+      "choices": [
+        "40",
+        "36",
+        "30",
+        "25"
+      ],
+      "answer": 2,
+      "explain": "5 × 6 = 30. Half of 6 × 10 (60) is 30."
+    },
+    {
+      "id": "tt-2x6",
+      "topic": "6 times table",
+      "difficulty": 1,
+      "prompt": "What is 6 × 2?",
+      "choices": [
+        "18",
+        "12",
+        "6",
+        "14"
+      ],
+      "answer": 1,
+      "explain": "6 × 2 = 12. Count 2 groups of 6: 6, 12."
+    },
+    {
+      "id": "tt-3x5",
+      "topic": "5 times table",
+      "difficulty": 1,
+      "prompt": "What is 5 × 3?",
+      "choices": [
+        "10",
+        "20",
+        "18",
+        "15"
+      ],
+      "answer": 3,
+      "explain": "5 × 3 = 15. Half of 3 × 10 (30) is 15."
+    },
+    {
+      "id": "tt-4x10",
+      "topic": "10 times table",
+      "difficulty": 3,
+      "prompt": "What is 10 × 4?",
+      "choices": [
+        "40",
+        "30",
+        "44",
+        "50"
+      ],
+      "answer": 0,
+      "explain": "10 × 4 = 40. Count 4 groups of 10: 10, 20, 30, 40."
+    },
+    {
+      "id": "tt-3x7",
+      "topic": "7 times table",
+      "difficulty": 2,
+      "prompt": "What is 3 × 7?",
+      "choices": [
+        "21",
+        "28",
+        "24",
+        "18"
+      ],
+      "answer": 0,
+      "explain": "3 × 7 = 21. Count 3 groups of 7: 7, 14, 21."
+    },
+    {
+      "id": "tt-2x3",
+      "topic": "3 times table",
+      "difficulty": 1,
+      "prompt": "What is 2 × 3?",
+      "choices": [
+        "4",
+        "16",
+        "6",
+        "3"
+      ],
+      "answer": 2,
+      "explain": "2 × 3 = 6. Count 2 groups of 3: 3, 6."
+    },
+    {
+      "id": "tt-4x6",
+      "topic": "6 times table",
+      "difficulty": 1,
+      "prompt": "What is 6 × 4?",
+      "choices": [
+        "30",
+        "24",
+        "18",
+        "28"
+      ],
+      "answer": 1,
+      "explain": "6 × 4 = 24. Count 4 groups of 6: 6, 12, 18, 24."
+    },
+    {
+      "id": "tt-8x10",
+      "topic": "10 times table",
+      "difficulty": 3,
+      "prompt": "What is 10 × 8?",
+      "choices": [
+        "70",
+        "88",
+        "72",
+        "80"
+      ],
+      "answer": 3,
+      "explain": "10 × 8 = 80. Split it: 10 × 5 = 50, plus 10 × 3 = 30, total 80."
+    },
+    {
+      "id": "tt-9x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 9 × 9?",
+      "choices": [
+        "81",
+        "91",
+        "72",
+        "90"
+      ],
+      "answer": 0,
+      "explain": "9 × 9 = 81. 9 × 10 = 90, minus 9 = 81."
+    },
+    {
+      "id": "tt-4x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 4 × 12?",
+      "choices": [
+        "44",
+        "60",
+        "38",
+        "48"
+      ],
+      "answer": 3,
+      "explain": "4 × 12 = 48. Count 4 groups of 12: 12, 24, 36, 48."
+    },
+    {
+      "id": "tt-7x10",
+      "topic": "10 times table",
+      "difficulty": 3,
+      "prompt": "What is 7 × 10?",
+      "choices": [
+        "70",
+        "77",
+        "80",
+        "63"
+      ],
+      "answer": 0,
+      "explain": "7 × 10 = 70. Split it: 10 × 5 = 50, plus 10 × 2 = 20, total 70."
+    },
+    {
+      "id": "tt-5x10",
+      "topic": "10 times table",
+      "difficulty": 3,
+      "prompt": "What is 10 × 5?",
+      "choices": [
+        "40",
+        "50",
+        "60",
+        "45"
+      ],
+      "answer": 1,
+      "explain": "10 × 5 = 50. Half of 10 × 10 (100) is 50."
+    },
+    {
+      "id": "tt-7x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 7 × 11?",
+      "choices": [
+        "66",
+        "77",
+        "88",
+        "84"
+      ],
+      "answer": 1,
+      "explain": "7 × 11 = 77. 7 × 10 = 70, plus 7 = 77."
+    },
+    {
+      "id": "tt-10x10",
+      "topic": "10 times table",
+      "difficulty": 3,
+      "prompt": "What is 10 × 10?",
+      "choices": [
+        "90",
+        "102",
+        "100",
+        "110"
+      ],
+      "answer": 2,
+      "explain": "10 × 10 = 100. Split it: 10 × 5 = 50, plus 10 × 5 = 50, total 100."
+    },
+    {
+      "id": "tt-8x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 8 × 9?",
+      "choices": [
+        "80",
+        "72",
+        "81",
+        "64"
+      ],
+      "answer": 1,
+      "explain": "8 × 9 = 72. 8 × 10 = 80, minus 8 = 72."
+    },
+    {
+      "id": "tt-2x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 9 × 2?",
+      "choices": [
+        "20",
+        "18",
+        "9",
+        "27"
+      ],
+      "answer": 1,
+      "explain": "9 × 2 = 18. 2 × 10 = 20, minus 2 = 18."
+    },
+    {
+      "id": "tt-5x7",
+      "topic": "7 times table",
+      "difficulty": 2,
+      "prompt": "What is 7 × 5?",
+      "choices": [
+        "35",
+        "28",
+        "40",
+        "42"
+      ],
+      "answer": 0,
+      "explain": "7 × 5 = 35. Half of 7 × 10 (70) is 35."
+    },
+    {
+      "id": "tt-9x10",
+      "topic": "10 times table",
+      "difficulty": 3,
+      "prompt": "What is 10 × 9?",
+      "choices": [
+        "81",
+        "90",
+        "99",
+        "80"
+      ],
+      "answer": 1,
+      "explain": "10 × 9 = 90. 10 × 10 = 100, minus 10 = 90."
+    },
+    {
+      "id": "tt-8x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 8?",
+      "choices": [
+        "84",
+        "88",
+        "96",
+        "104"
+      ],
+      "answer": 2,
+      "explain": "12 × 8 = 96. Split it: 12 × 5 = 60, plus 12 × 3 = 36, total 96."
+    },
+    {
+      "id": "tt-2x10",
+      "topic": "10 times table",
+      "difficulty": 3,
+      "prompt": "What is 2 × 10?",
+      "choices": [
+        "18",
+        "22",
+        "20",
+        "10"
+      ],
+      "answer": 2,
+      "explain": "2 × 10 = 20. Count 2 groups of 10: 10, 20."
+    },
+    {
+      "id": "tt-3x4",
+      "topic": "4 times table",
+      "difficulty": 1,
+      "prompt": "What is 4 × 3?",
+      "choices": [
+        "15",
+        "16",
+        "8",
+        "12"
+      ],
+      "answer": 3,
+      "explain": "4 × 3 = 12. Count 3 groups of 4: 4, 8, 12."
+    },
+    {
+      "id": "tt-2x5",
+      "topic": "5 times table",
+      "difficulty": 1,
+      "prompt": "What is 5 × 2?",
+      "choices": [
+        "10",
+        "5",
+        "15",
+        "8"
+      ],
+      "answer": 0,
+      "explain": "5 × 2 = 10. Half of 2 × 10 (20) is 10."
+    },
+    {
+      "id": "tt-7x9",
+      "topic": "9 times table",
+      "difficulty": 2,
+      "prompt": "What is 9 × 7?",
+      "choices": [
+        "63",
+        "70",
+        "72",
+        "56"
+      ],
+      "answer": 0,
+      "explain": "9 × 7 = 63. 7 × 10 = 70, minus 7 = 63."
+    },
+    {
+      "id": "tt-7x8",
+      "topic": "8 times table",
+      "difficulty": 2,
+      "prompt": "What is 7 × 8?",
+      "choices": [
+        "63",
+        "56",
+        "49",
+        "64"
+      ],
+      "answer": 1,
+      "explain": "7 × 8 = 56. Split it: 8 × 5 = 40, plus 8 × 2 = 16, total 56."
+    },
+    {
+      "id": "tt-4x7",
+      "topic": "7 times table",
+      "difficulty": 2,
+      "prompt": "What is 4 × 7?",
+      "choices": [
+        "28",
+        "21",
+        "35",
+        "24"
+      ],
+      "answer": 0,
+      "explain": "4 × 7 = 28. Count 4 groups of 7: 7, 14, 21, 28."
+    },
+    {
+      "id": "tt-2x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 2 × 11?",
+      "choices": [
+        "11",
+        "32",
+        "20",
+        "22"
+      ],
+      "answer": 3,
+      "explain": "2 × 11 = 22. 2 × 10 = 20, plus 2 = 22."
+    },
+    {
+      "id": "tt-6x7",
+      "topic": "7 times table",
+      "difficulty": 2,
+      "prompt": "What is 7 × 6?",
+      "choices": [
+        "42",
+        "48",
+        "35",
+        "49"
+      ],
+      "answer": 0,
+      "explain": "7 × 6 = 42. Split it: 7 × 5 = 35, plus 7 × 1 = 7, total 42."
+    },
+    {
+      "id": "tt-5x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 5?",
+      "choices": [
+        "55",
+        "72",
+        "60",
+        "65"
+      ],
+      "answer": 2,
+      "explain": "12 × 5 = 60. Half of 12 × 10 (120) is 60."
+    },
+    {
+      "id": "tt-2x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 2 × 12?",
+      "choices": [
+        "26",
+        "36",
+        "24",
+        "22"
+      ],
+      "answer": 2,
+      "explain": "2 × 12 = 24. Count 2 groups of 12: 12, 24."
+    },
+    {
+      "id": "tt-9x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 11 × 9?",
+      "choices": [
+        "101",
+        "97",
+        "99",
+        "102"
+      ],
+      "answer": 2,
+      "explain": "11 × 9 = 99. 11 × 10 = 110, minus 11 = 99."
+    },
+    {
+      "id": "tt-6x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 11 × 6?",
+      "choices": [
+        "60",
+        "55",
+        "72",
+        "66"
+      ],
+      "answer": 3,
+      "explain": "11 × 6 = 66. 6 × 10 = 60, plus 6 = 66."
+    },
+    {
+      "id": "tt-6x8",
+      "topic": "8 times table",
+      "difficulty": 2,
+      "prompt": "What is 8 × 6?",
+      "choices": [
+        "58",
+        "48",
+        "54",
+        "56"
+      ],
+      "answer": 1,
+      "explain": "8 × 6 = 48. Split it: 8 × 5 = 40, plus 8 × 1 = 8, total 48."
+    },
+    {
+      "id": "tt-7x7",
+      "topic": "7 times table",
+      "difficulty": 2,
+      "prompt": "What is 7 × 7?",
+      "choices": [
+        "59",
+        "56",
+        "42",
+        "49"
+      ],
+      "answer": 3,
+      "explain": "7 × 7 = 49. Split it: 7 × 5 = 35, plus 7 × 2 = 14, total 49."
+    },
+    {
+      "id": "tt-3x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 3?",
+      "choices": [
+        "24",
+        "39",
+        "48",
+        "36"
+      ],
+      "answer": 3,
+      "explain": "12 × 3 = 36. Count 3 groups of 12: 12, 24, 36."
+    },
+    {
+      "id": "tt-2x7",
+      "topic": "7 times table",
+      "difficulty": 2,
+      "prompt": "What is 2 × 7?",
+      "choices": [
+        "14",
+        "12",
+        "16",
+        "21"
+      ],
+      "answer": 0,
+      "explain": "2 × 7 = 14. Count 2 groups of 7: 7, 14."
+    },
+    {
+      "id": "tt-4x5",
+      "topic": "5 times table",
+      "difficulty": 1,
+      "prompt": "What is 5 × 4?",
+      "choices": [
+        "20",
+        "24",
+        "25",
+        "15"
+      ],
+      "answer": 0,
+      "explain": "5 × 4 = 20. Half of 4 × 10 (40) is 20."
+    },
+    {
+      "id": "tt-12x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 12?",
+      "choices": [
+        "146",
+        "144",
+        "132",
+        "156"
+      ],
+      "answer": 1,
+      "explain": "12 × 12 = 144. Split it: 12 × 5 = 60, plus 12 × 7 = 84, total 144."
+    },
+    {
+      "id": "tt-7x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 7?",
+      "choices": [
+        "91",
+        "84",
+        "72",
+        "77"
+      ],
+      "answer": 1,
+      "explain": "12 × 7 = 84. Split it: 12 × 5 = 60, plus 12 × 2 = 24, total 84."
+    },
+    {
+      "id": "tt-3x6",
+      "topic": "6 times table",
+      "difficulty": 1,
+      "prompt": "What is 6 × 3?",
+      "choices": [
+        "24",
+        "21",
+        "18",
+        "15"
+      ],
+      "answer": 2,
+      "explain": "6 × 3 = 18. Count 3 groups of 6: 6, 12, 18."
+    },
+    {
+      "id": "tt-6x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 6?",
+      "choices": [
+        "72",
+        "84",
+        "66",
+        "60"
+      ],
+      "answer": 0,
+      "explain": "12 × 6 = 72. Split it: 12 × 5 = 60, plus 12 × 1 = 12, total 72."
+    },
+    {
+      "id": "tt-2x4",
+      "topic": "4 times table",
+      "difficulty": 1,
+      "prompt": "What is 2 × 4?",
+      "choices": [
+        "4",
+        "8",
+        "12",
+        "6"
+      ],
+      "answer": 1,
+      "explain": "2 × 4 = 8. Count 2 groups of 4: 4, 8."
+    },
+    {
+      "id": "tt-2x8",
+      "topic": "8 times table",
+      "difficulty": 2,
+      "prompt": "What is 8 × 2?",
+      "choices": [
+        "18",
+        "24",
+        "16",
+        "26"
+      ],
+      "answer": 2,
+      "explain": "8 × 2 = 16. Count 2 groups of 8: 8, 16."
+    },
+    {
+      "id": "tt-4x11",
+      "topic": "11 times table",
+      "difficulty": 3,
+      "prompt": "What is 11 × 4?",
+      "choices": [
+        "40",
+        "44",
+        "33",
+        "55"
+      ],
+      "answer": 1,
+      "explain": "11 × 4 = 44. 4 × 10 = 40, plus 4 = 44."
+    },
+    {
+      "id": "tt-9x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 9?",
+      "choices": [
+        "120",
+        "117",
+        "108",
+        "96"
+      ],
+      "answer": 2,
+      "explain": "12 × 9 = 108. 12 × 10 = 120, minus 12 = 108."
+    },
+    {
+      "id": "tt-10x12",
+      "topic": "12 times table",
+      "difficulty": 3,
+      "prompt": "What is 12 × 10?",
+      "choices": [
+        "120",
+        "108",
+        "132",
+        "130"
+      ],
+      "answer": 0,
+      "explain": "12 × 10 = 120. Split it: 12 × 5 = 60, plus 12 × 5 = 60, total 120."
+    }
+  ]
+}

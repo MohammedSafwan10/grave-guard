@@ -1,0 +1,494 @@
+{
+  "asset_count": 28,
+  "expected_count": 28,
+  "total_bytes": 39170524,
+  "errors": [],
+  "assets": [
+    {
+      "file": "defenders/def_gargoyle.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1474600,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        125,
+        135,
+        1040,
+        1135
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "defenders/def_lantern.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 893738,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        340,
+        60,
+        914,
+        1119
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "defenders/def_coffin.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1212728,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        303,
+        65,
+        959,
+        1157
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "defenders/def_salt_rune.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1515272,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        124,
+        132,
+        1129,
+        1061
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "defenders/def_bell.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1399707,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        153,
+        52,
+        1097,
+        1170
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "enemies/enemy_wisp.png",
+      "width": 1261,
+      "height": 1247,
+      "mode": "RGBA",
+      "bytes": 470879,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        187,
+        380,
+        1082,
+        855
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "enemies/enemy_shade.png",
+      "width": 1261,
+      "height": 1247,
+      "mode": "RGBA",
+      "bytes": 713462,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        100,
+        365,
+        1220,
+        894
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "enemies/enemy_bone_knight.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 953510,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        92,
+        137,
+        1186,
+        1063
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "enemies/enemy_wraith.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1294095,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        57,
+        123,
+        1195,
+        1117
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "enemies/enemy_lich.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 2124106,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        62,
+        14,
+        1186,
+        1229
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "backgrounds/bg_sky.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 1665593,
+      "alpha_range": null,
+      "visible_bounds_at_alpha_32": null,
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "backgrounds/bg_far_hills.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "bytes": 1598239,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "visible_bounds_at_alpha_32": [
+        0,
+        524,
+        1536,
+        1024
+      ],
+      "visible_content_touches_edge": true
+    },
+    {
+      "file": "backgrounds/fg_gate_left.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "bytes": 2543424,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "visible_bounds_at_alpha_32": [
+        23,
+        123,
+        998,
+        1397
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "textures/tex_tile_stone.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 2571343,
+      "alpha_range": null,
+      "visible_bounds_at_alpha_32": null,
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "textures/tex_grass.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 2307090,
+      "alpha_range": null,
+      "visible_bounds_at_alpha_32": null,
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "vfx/vfx_soul_bolt.png",
+      "width": 1262,
+      "height": 1246,
+      "mode": "RGBA",
+      "bytes": 352489,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "visible_bounds_at_alpha_32": [
+        304,
+        517,
+        955,
+        731
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "vfx/vfx_energy_orb.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 601323,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        299,
+        108,
+        891,
+        1045
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/ui_logo.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "bytes": 1548719,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "visible_bounds_at_alpha_32": [
+        71,
+        245,
+        1467,
+        699
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/ui_spellbook.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "bytes": 2633699,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "visible_bounds_at_alpha_32": [
+        9,
+        4,
+        1015,
+        1516
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/ui_answer_button.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "bytes": 1837439,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        81,
+        89,
+        2090,
+        624
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/ui_shop_card.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "bytes": 2281211,
+      "alpha_range": [
+        0,
+        254
+      ],
+      "visible_bounds_at_alpha_32": [
+        33,
+        57,
+        993,
+        1491
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/ui_hud_plaque.png",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "bytes": 1281692,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        42,
+        100,
+        2130,
+        585
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/icon_soul_gem.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 726621,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        338,
+        108,
+        900,
+        1121
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/icon_heart_full.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 792028,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        222,
+        279,
+        1026,
+        985
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/icon_heart_empty.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 851695,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        188,
+        232,
+        1061,
+        1030
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/icon_star_full.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1503929,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        74,
+        106,
+        1171,
+        1130
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/icon_star_empty.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 843068,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        71,
+        76,
+        1176,
+        1116
+      ],
+      "visible_content_touches_edge": false
+    },
+    {
+      "file": "ui/icon_lock.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "bytes": 1178825,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "visible_bounds_at_alpha_32": [
+        240,
+        105,
+        1004,
+        1131
+      ],
+      "visible_content_touches_edge": false
+    }
+  ],
+  "limitations": [
+    "Dimensions are the actual generation outputs, not guaranteed prompt sizes.",
+    "Texture wrap seams and assembled game appearance still require runtime inspection.",
+    "Static sprite poses only; no skeletal models or frame animations.",
+    "P2 optional assets and music were not part of this P1 batch."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "lantern": {
+    "name": "Soul Lantern",
+    "cost": 50,
+    "hp": 300,
+    "answerBonus": 5,
+    "maxCounted": 4,
+    "sprite": "defenders/def_lantern"
+  },
+  "gargoyle": {
+    "name": "Gargoyle",
+    "cost": 50,
+    "hp": 300,
+    "fireEverySec": 1.4,
+    "damage": 20,
+    "boltSpeed": 6,
+    "sprite": "defenders/def_gargoyle"
+  },
+  "coffin": {
+    "name": "Iron Coffin",
+    "cost": 50,
+    "hp": 2000,
+    "sprite": "defenders/def_coffin"
+  },
+  "rune": {
+    "name": "Salt Rune",
+    "cost": 75,
+    "slowFactor": 0.5,
+    "slowSec": 3,
+    "lifetimeSec": 30,
+    "sprite": "defenders/def_salt_rune"
+  },
+  "bell": {
+    "name": "Banshee Bell",
+    "cost": 150,
+    "hp": 300,
+    "pulseEverySec": 20,
+    "pulseDamage": 60,
+    "unlockStreak": 3,
+    "sprite": "defenders/def_bell"
+  }
+}
